@@ -298,10 +298,24 @@ img {
 .fa-regular {
   font-family: fontAwesome;
   font-style: normal;
+  display: block;
+  background-color: #ffa8bd;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
+  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .material-icons-outlined {
   font-family: "Material Icons";
+  display: block;
+  background-color: #ffa8bd;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
+  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 a {
@@ -345,6 +359,11 @@ h4 {
   font-size: 2rem;
   font-family: "Made Bon Voyage", serif;
   font-weight: 400;
+}
+
+footer p {
+  text-align: center;
+  margin: 40px 0 10px;
 }
 
 nav {
@@ -513,4 +532,35 @@ header .image-container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.contact h3 {
+  margin: 60px auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact i {
+  font-size: 40px;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.contact-icons {
+  margin-top: 30px;
 }

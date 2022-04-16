@@ -1,0 +1,23 @@
+.contact {
+	// height: 40vh;
+	h3 {
+		margin: 60px auto 0;
+		width: fit-content;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	i {
+		@include font-size(40);
+		display: inline-block;
+	}
+}
+
+.contact-icons {
+	margin-top: 30px;
+}

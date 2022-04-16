@@ -25,10 +25,22 @@ img {
 .fa-regular {
 	font-family: fontAwesome;
 	font-style: normal;
+	display: block;
+	background-color: $pink;
+	background-image: linear-gradient(90deg, $pink 0%, $purple 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
 .material-icons-outlined {
 	font-family: "Material Icons";
+	display: block;
+	background-color: $pink;
+	background-image: linear-gradient(90deg, $pink 0%, $purple 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
 a {
@@ -61,4 +73,11 @@ h3 {
 
 h4 {
 	@include h4-font;
+}
+
+footer {
+	p {
+		text-align: center;
+		margin: 40px 0 10px;
+	}
 }
