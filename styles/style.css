@@ -468,3 +468,49 @@ header .image-container {
   background-clip: text;
   color: transparent;
 }
+
+.js-quiz,
+.planted,
+.tasty {
+  max-width: 70%;
+  margin: 100px 0;
+  margin-right: auto;
+}
+.js-quiz .image-container,
+.planted .image-container,
+.tasty .image-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.js-quiz .project-container,
+.planted .project-container,
+.tasty .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.js-quiz h4,
+.planted h4,
+.tasty h4 {
+  width: 50%;
+  margin: 0;
+}
+
+.planted {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.project-info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
