@@ -1,0 +1,38 @@
+.skills {
+	height: 80vh;
+	ul {
+		margin: 0 auto;
+		max-width: 90%;
+		display: flex;
+		justify-content: space-between;
+		// align-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		li {
+			max-width: 150px;
+			width: 150px;
+			margin: 20px auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+
+			p {
+				text-align: center;
+				max-width: 100%;
+			}
+
+			i,
+			span {
+				@include font-size(70);
+				display: block;
+				background-color: $pink;
+				background-image: linear-gradient(90deg, $pink 0%, $purple 100%);
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+			}
+		}
+	}
+}

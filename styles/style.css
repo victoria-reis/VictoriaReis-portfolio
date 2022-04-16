@@ -300,6 +300,10 @@ img {
   font-style: normal;
 }
 
+.material-icons-outlined {
+  font-family: "Material Icons";
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -398,4 +402,69 @@ header span {
 }
 header .image-container {
   margin-left: auto;
+}
+
+.about {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about p {
+  max-width: 80%;
+}
+
+.skills {
+  height: 80vh;
+}
+.skills ul {
+  margin: 0 auto;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills ul li {
+  max-width: 150px;
+  width: 150px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.skills ul li p {
+  text-align: center;
+  max-width: 100%;
+}
+.skills ul li i,
+.skills ul li span {
+  font-size: 70px;
+  font-size: 3.5rem;
+  display: block;
+  background-color: #ffa8bd;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
+  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
