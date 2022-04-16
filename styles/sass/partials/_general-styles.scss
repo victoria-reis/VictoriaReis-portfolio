@@ -1,0 +1,60 @@
+html {
+	font-size: 125%;
+	font-family: $text-font;
+	color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 85%;
+	max-width: 1400px;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.fa-solid,
+.fa-brands,
+.fa-regular {
+	font-family: fontAwesome;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	padding: 15px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin: 0;
+		list-style: none;
+	}
+}
+
+h1 {
+	@include h1-font;
+}
+
+h2 {
+	@include h2-font;
+}
+
+h3 {
+	@include h3-font;
+}
+
+h4 {
+	@include h4-font;
+}

@@ -261,3 +261,141 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@font-face {
+  font-family: Made Bon Voyage;
+  src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-regular.otf");
+}
+@font-face {
+  font-family: Made Bon Voyage;
+  src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-thin.otf");
+  font-weight: lighter;
+}
+html {
+  font-size: 125%;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1400px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.fa-solid,
+.fa-brands,
+.fa-regular {
+  font-family: fontAwesome;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: 80px;
+  font-size: 4rem;
+  font-family: "Made Bon Voyage", serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 50px;
+  font-size: 2.5rem;
+  font-family: "Made Bon Voyage", serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 60px;
+  font-size: 3rem;
+  font-family: "Made Bon Voyage", serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 40px;
+  font-size: 2rem;
+  font-family: "Made Bon Voyage", serif;
+  font-weight: 400;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul {
+  margin: 30px -15px 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul li {
+  text-transform: uppercase;
+  font-family: "Made Bon Voyage", serif;
+}
+
+.platforms .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  position: fixed;
+  right: 0;
+  top: 35%;
+}
+.platforms .wrapper i {
+  font-size: 30px;
+  font-size: 1.5rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 5%;
+  height: 100vh;
+}
+header span {
+  display: block;
+}
+header .image-container {
+  margin-left: auto;
+}

@@ -1,0 +1,15 @@
+header {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 5%;
+	// height: calc(100vh - 73px);
+	height: 100vh;
+
+	span {
+		display: block;
+	}
+
+	.image-container {
+		margin-left: auto;
+	}
+}

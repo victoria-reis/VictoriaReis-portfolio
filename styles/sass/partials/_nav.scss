@@ -1,0 +1,13 @@
+nav {
+	display: flex;
+	ul {
+		margin: 30px -15px 20px auto;
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			text-transform: uppercase;
+			font-family: $heading-font;
+		}
+	}
+}
