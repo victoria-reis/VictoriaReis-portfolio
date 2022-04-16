@@ -1,13 +1,7 @@
 // fonts
 @font-face {
 	font-family: Made Bon Voyage;
-	src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-regular.otf");
-}
-
-@font-face {
-	font-family: Made Bon Voyage;
 	src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-thin.otf");
-	font-weight: lighter;
 }
 
 // typography variables
@@ -17,6 +11,8 @@ $text-font: "Open Sans", sans-serif;
 // color variables
 $purple: #242acf;
 $pink: #ffa8bd;
+// $purple: #a17a60;
+// $pink: #ddc1a7;
 
 // typography mixins
 @mixin font-size($sizeValue) {
@@ -27,23 +23,19 @@ $pink: #ffa8bd;
 @mixin h1-font {
 	@include font-size(80);
 	font-family: $heading-font;
-	font-weight: 400;
 }
 
 @mixin h2-font {
 	@include font-size(50);
 	font-family: $heading-font;
-	font-weight: 400;
 }
 
 @mixin h3-font {
 	@include font-size(60);
 	font-family: $heading-font;
-	font-weight: 400;
 }
 
 @mixin h4-font {
 	@include font-size(40);
 	font-family: $heading-font;
-	font-weight: 400;
 }

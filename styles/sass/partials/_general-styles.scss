@@ -31,6 +31,10 @@ img {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
+	transition: 0.8s;
+	&:hover {
+		color: $purple;
+	}
 }
 
 .material-icons-outlined {
@@ -41,6 +45,10 @@ img {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
+	transition: 0.8s;
+	&:hover {
+		color: $purple;
+	}
 }
 
 a {

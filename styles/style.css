@@ -264,12 +264,7 @@ template {
 
 @font-face {
   font-family: Made Bon Voyage;
-  src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-regular.otf");
-}
-@font-face {
-  font-family: Made Bon Voyage;
   src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-thin.otf");
-  font-weight: lighter;
 }
 html {
   font-size: 125%;
@@ -305,6 +300,13 @@ img {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.fa-solid:hover,
+.fa-brands:hover,
+.fa-regular:hover {
+  color: #242acf;
 }
 
 .material-icons-outlined {
@@ -316,6 +318,11 @@ img {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.material-icons-outlined:hover {
+  color: #242acf;
 }
 
 a {
@@ -337,28 +344,24 @@ h1 {
   font-size: 80px;
   font-size: 4rem;
   font-family: "Made Bon Voyage", serif;
-  font-weight: 400;
 }
 
 h2 {
   font-size: 50px;
   font-size: 2.5rem;
   font-family: "Made Bon Voyage", serif;
-  font-weight: 400;
 }
 
 h3 {
   font-size: 60px;
   font-size: 3rem;
   font-family: "Made Bon Voyage", serif;
-  font-weight: 400;
 }
 
 h4 {
   font-size: 40px;
   font-size: 2rem;
   font-family: "Made Bon Voyage", serif;
-  font-weight: 400;
 }
 
 footer p {
@@ -366,12 +369,12 @@ footer p {
   margin: 40px 0 10px;
 }
 
-nav {
+nav .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav ul {
+nav .wrapper ul {
   margin: 30px -15px 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,12 +383,13 @@ nav ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-nav ul li {
+nav .wrapper ul li {
   text-transform: uppercase;
-  font-family: "Made Bon Voyage", serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
 }
 
-.platforms .wrapper {
+.side-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,31 +400,54 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   position: fixed;
   right: 0;
-  top: 35%;
+  top: 40%;
 }
-.platforms .wrapper i {
-  font-size: 30px;
-  font-size: 1.5rem;
+.side-icons i {
+  font-size: 20px;
+  font-size: 1rem;
 }
 
 header {
+  padding-top: 5%;
+  height: 100vh;
+}
+header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 5%;
-  height: 100vh;
 }
 header span {
   display: block;
 }
+header h1,
+header h2 {
+  margin-right: 30px;
+}
 header .image-container {
+  max-width: 40%;
   margin-left: auto;
+}
+
+.image-shadow {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
+  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  position: relative;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+.image-shadow img {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 .about {
@@ -474,6 +501,11 @@ header .image-container {
 .skills ul li p {
   text-align: center;
   max-width: 100%;
+  margin: 5px auto;
+}
+.skills ul li .material-icons-outlined {
+  margin-top: 5px;
+  margin-bottom: -15px;
 }
 .skills ul li i,
 .skills ul li span {
@@ -486,6 +518,12 @@ header .image-container {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.skills ul li i:hover,
+.skills ul li span:hover {
+  color: #242acf;
 }
 
 .js-quiz,
@@ -526,6 +564,9 @@ header .image-container {
 .planted {
   margin-right: 0;
   margin-left: auto;
+}
+.planted p {
+  text-align: right;
 }
 
 .project-info {
