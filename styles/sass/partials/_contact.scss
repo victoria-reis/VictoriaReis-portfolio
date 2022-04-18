@@ -18,6 +18,26 @@
 	}
 }
 
+// .contact.reveal {
+// 	transform: translateY(20px);
+// }
+
 .contact-icons {
 	margin-top: 30px;
+}
+
+.fa-chevron-up {
+	a {
+		padding: 15px;
+	}
+	animation: arrow 1s linear 0s infinite normal;
+}
+
+@keyframes arrow {
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }

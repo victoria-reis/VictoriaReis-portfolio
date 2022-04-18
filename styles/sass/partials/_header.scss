@@ -2,6 +2,7 @@ header {
 	.wrapper {
 		display: flex;
 		justify-content: space-evenly;
+		align-items: center;
 	}
 	padding-top: 5%;
 	// height: calc(100vh - 73px);
@@ -11,9 +12,13 @@ header {
 		display: block;
 	}
 
+	div:nth-of-type(1) {
+		height: fit-content;
+	}
+
 	h1,
 	h2 {
-		margin-right: 30px;
+		margin: 0 30px 0 0;
 	}
 
 	.image-container {

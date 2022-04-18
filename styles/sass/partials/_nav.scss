@@ -10,6 +10,16 @@ nav {
 				text-transform: uppercase;
 				font-family: $text-font;
 				font-weight: lighter;
+				// padding: 5px 10px;
+
+				a {
+					transition: 0.5s;
+					&:hover {
+						background-image: linear-gradient(90deg, $pink 0%, $purple 100%);
+						color: white;
+						// padding: 10px 0;
+					}
+				}
 			}
 		}
 	}

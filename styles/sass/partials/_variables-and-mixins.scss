@@ -13,6 +13,8 @@ $purple: #242acf;
 $pink: #ffa8bd;
 // $purple: #a17a60;
 // $pink: #ddc1a7;
+// $purple: #1f306e;
+// $pink: #8f3b76;
 
 // typography mixins
 @mixin font-size($sizeValue) {
@@ -38,4 +40,5 @@ $pink: #ffa8bd;
 @mixin h4-font {
 	@include font-size(40);
 	font-family: $heading-font;
+	font-weight: 900;
 }
