@@ -9,13 +9,15 @@ $heading-font: "Made Bon Voyage", serif;
 $text-font: "Open Sans", sans-serif;
 
 // color variables
-$purple: #242acf;
-$pink: #ffa8bd;
+$purple: #bd5ec2;
+$pink: #f862a7;
+$coral: #ff7a87;
+$salmon: #ffa26a;
+$yellow: #ffc744;
 // $purple: #a17a60;
 // $pink: #ddc1a7;
 // $purple: #1f306e;
 // $pink: #8f3b76;
-
 // typography mixins
 @mixin font-size($sizeValue) {
 	font-size: $sizeValue * 1px;

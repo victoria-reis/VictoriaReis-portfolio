@@ -1,0 +1,65 @@
+@media (max-width: 1200px) {
+	header {
+		height: 80vh;
+	}
+	h1 {
+		@include font-size(70);
+	}
+
+	h2 {
+		@include font-size(40);
+	}
+
+	.about {
+		padding: 80px 0;
+	}
+
+	.skills {
+		padding: 80px 0;
+		ul {
+			li {
+				i,
+				span {
+					@include font-size(60);
+				}
+			}
+		}
+	}
+
+	.projects {
+		padding-top: 80px;
+	}
+}
+
+@media (max-width: 950px) {
+	header {
+		height: auto;
+		.wrapper {
+			flex-direction: column;
+		}
+
+		div:nth-of-type(1) {
+			text-align: center;
+		}
+
+		.image-container {
+			max-width: 50%;
+			margin: 60px auto;
+		}
+	}
+
+	.about {
+		padding: 40px 0;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			text-align: center;
+			margin: 0 auto;
+			max-width: 90%;
+		}
+	}
+
+	.skills {
+		text-align: center;
+	}
+}

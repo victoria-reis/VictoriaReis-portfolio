@@ -275,6 +275,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-image: radial-gradient(circle, rgba(189, 94, 194, 0.15), rgba(255, 122, 135, 0.15), rgba(255, 199, 68, 0.1));
 }
 
 .wrapper {
@@ -294,9 +295,9 @@ img {
   font-family: fontAwesome;
   font-style: normal;
   display: block;
-  background-color: #ffa8bd;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
-  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  background-color: #f862a7;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -306,15 +307,15 @@ img {
 .fa-solid:hover,
 .fa-brands:hover,
 .fa-regular:hover {
-  color: #242acf;
+  color: #bd5ec2;
 }
 
 .material-icons-outlined {
   font-family: "Material Icons";
   display: block;
-  background-color: #ffa8bd;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
-  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  background-color: #f862a7;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -322,7 +323,7 @@ img {
   transition: 0.8s;
 }
 .material-icons-outlined:hover {
-  color: #242acf;
+  color: #bd5ec2;
 }
 
 a {
@@ -370,73 +371,14 @@ footer p {
   margin: 40px 0 10px;
 }
 
-.background-png-1 {
-  position: absolute;
-  -webkit-filter: blur(2000px);
-          filter: blur(2000px);
-  width: 917px;
-  height: 980px;
-  right: 0;
-  top: 30px;
-  z-index: -1;
-}
-
-.background-png-2 {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-transform: rotate(-120deg);
-          transform: rotate(-120deg);
-  -webkit-filter: blur(2000px);
-          filter: blur(2000px);
-  position: absolute;
-  width: 917px;
-  height: 980px;
-  left: 0;
-  top: 600px;
-  z-index: -1;
-}
-
-.background-png-3 {
-  -webkit-filter: blur(2000px);
-          filter: blur(2000px);
-  position: absolute;
-  z-index: -1;
-}
-
-.background-png-4 {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-transform: rotate(-160deg);
-          transform: rotate(-160deg);
-  -webkit-filter: blur(2000px);
-          filter: blur(2000px);
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.background-png-5 {
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
-  -webkit-filter: blur(2000px);
-          filter: blur(2000px);
-  position: absolute;
-  top: 3200px;
-  z-index: -1;
-}
-
 .reveal {
   position: relative;
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
   opacity: 0;
-  -webkit-transition: all 1.5s ease;
-  transition: all 1.5s ease;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 .reveal.active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
   opacity: 1;
 }
 
@@ -464,8 +406,8 @@ nav .wrapper ul li a {
   transition: 0.5s;
 }
 nav .wrapper ul li a:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
-  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   color: white;
 }
 
@@ -493,7 +435,7 @@ nav .wrapper ul li a:hover {
 }
 
 header {
-  padding-top: 5%;
+  padding-top: 8%;
   height: 100vh;
 }
 header .wrapper {
@@ -527,8 +469,8 @@ header .image-container {
 .image-shadow {
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
-  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   position: relative;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
@@ -539,7 +481,7 @@ header .image-container {
 }
 
 .about {
-  height: 50vh;
+  padding: 120px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,7 +495,7 @@ header .image-container {
 }
 
 .skills {
-  height: 60vh;
+  padding: 120px 0;
 }
 .skills ul {
   margin: 0 auto;
@@ -600,9 +542,9 @@ header .image-container {
   font-size: 70px;
   font-size: 3.5rem;
   display: block;
-  background-color: #ffa8bd;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
-  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  background-color: #f862a7;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -611,7 +553,11 @@ header .image-container {
 }
 .skills ul li i:hover,
 .skills ul li span:hover {
-  color: #242acf;
+  color: #bd5ec2;
+}
+
+.projects {
+  padding: 120px 0 80px;
 }
 
 .js-quiz,
@@ -668,8 +614,8 @@ header .image-container {
   transition: 0.5s;
 }
 .project-info a:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffa8bd), to(#242acf));
-  background-image: linear-gradient(90deg, #ffa8bd 0%, #242acf 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   color: white;
 }
 
@@ -731,5 +677,70 @@ header .image-container {
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    height: 80vh;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-size: 2rem;
+  }
+
+  .about {
+    padding: 80px 0;
+  }
+
+  .skills {
+    padding: 80px 0;
+  }
+  .skills ul li i,
+.skills ul li span {
+    font-size: 60px;
+    font-size: 3rem;
+  }
+
+  .projects {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 950px) {
+  header {
+    height: auto;
+  }
+  header .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header div:nth-of-type(1) {
+    text-align: center;
+  }
+  header .image-container {
+    max-width: 50%;
+    margin: 60px auto;
+  }
+
+  .about {
+    padding: 40px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .skills {
+    text-align: center;
   }
 }
