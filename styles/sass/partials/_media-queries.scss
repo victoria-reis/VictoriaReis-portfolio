@@ -42,6 +42,11 @@
 			text-align: center;
 		}
 
+		h1,
+		h2 {
+			margin: 0 auto;
+		}
+
 		.image-container {
 			max-width: 50%;
 			margin: 60px auto;
@@ -61,5 +66,57 @@
 
 	.skills {
 		text-align: center;
+	}
+
+	.projects {
+		padding: 0;
+		text-align: center;
+		h4 {
+			margin-top: 20px;
+		}
+	}
+
+	.js-quiz,
+	.planted,
+	.tasty {
+		max-width: 100%;
+		margin: 100px auto;
+		h4 {
+			width: 80%;
+			margin: 0;
+		}
+
+		.image-container {
+			width: 85%;
+			margin: 0 auto;
+		}
+
+		.project-container {
+			flex-direction: column;
+
+			p {
+				margin: 10px auto;
+			}
+		}
+	}
+
+	.planted {
+		p {
+			text-align: center;
+		}
+	}
+
+	.project-info {
+		padding: 0;
+	}
+
+	.contact {
+		h3 {
+			margin: 60px auto 0;
+		}
+	}
+
+	.contact-icons {
+		margin: 10px auto;
 	}
 }
