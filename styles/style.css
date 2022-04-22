@@ -263,8 +263,12 @@ template {
 }
 
 @font-face {
-  font-family: Made Bon Voyage;
+  font-family: Thin Made Bon Voyage;
   src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-thin.otf");
+}
+@font-face {
+  font-family: Regular Made Bon Voyage;
+  src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-regular.otf");
 }
 html {
   font-size: 125%;
@@ -344,26 +348,25 @@ ul li {
 h1 {
   font-size: 80px;
   font-size: 4rem;
-  font-family: "Made Bon Voyage", serif;
+  font-family: "Thin Made Bon Voyage", "serif";
 }
 
 h2 {
   font-size: 50px;
   font-size: 2.5rem;
-  font-family: "Made Bon Voyage", serif;
+  font-family: "Thin Made Bon Voyage", "serif";
 }
 
 h3 {
   font-size: 60px;
   font-size: 3rem;
-  font-family: "Made Bon Voyage", serif;
+  font-family: "Thin Made Bon Voyage", "serif";
 }
 
 h4 {
   font-size: 40px;
   font-size: 2rem;
-  font-family: "Made Bon Voyage", serif;
-  font-weight: 900;
+  font-family: "Regular Made Bon Voyage";
 }
 
 footer p {
@@ -382,7 +385,7 @@ footer p {
   opacity: 1;
 }
 
-nav .wrapper {
+.navigation .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,64 +415,58 @@ nav .wrapper {
   color: white;
 }
 
-.hamburger {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: fixed;
-  right: 10px;
-  top: 10px;
+.nav-toggle {
   display: none;
-}
-.hamburger .line {
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: #bd5ec2;
-  margin: 10px;
-  border-radius: 4px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: fixed;
+  padding: 12px 7px;
+  background-color: rgba(189, 94, 194, 0.7);
+  border: none;
+  margin: 7px 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 
-.hamburger.active .line:nth-child(1) {
-  -webkit-transform: translateY(17.2px);
-          transform: translateY(17.2px);
-  rotate: 45deg;
+.nav-toggle:focus {
+  outline-width: 0;
 }
-.hamburger.active .line:nth-child(2) {
+
+.bar-top,
+.bar-mid,
+.bar-bot {
+  background: white;
+  display: block;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease all;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-radius: 2px;
+  height: 2px;
+  width: 25px;
+  margin-bottom: 4px;
+}
+
+.nav-toggle .bar-bot {
+  margin-bottom: 0;
+}
+
+.opened .bar-top {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 15% 15%;
+  transform-origin: 15% 15%;
+}
+
+.opened .bar-mid {
   opacity: 0;
 }
-.hamburger.active .line:nth-child(3) {
-  -webkit-transform: translateY(-17.2px);
-          transform: translateY(-17.2px);
-  rotate: -45deg;
-}
 
-.side-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: fixed;
-  right: 0;
-  top: 40%;
-}
-.side-icons i {
-  font-size: 20px;
-  font-size: 1rem;
+.opened .bar-bot {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 15% 95%;
+  transform-origin: 15% 95%;
 }
 
 header {
@@ -760,28 +757,41 @@ header .image-container {
     width: 95%;
   }
 
-  .hamburger {
-    display: inline;
-    z-index: 10;
+  .navigation .wrapper {
+    width: 100vw;
+    height: 100vh;
+    right: -100vw;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(189, 94, 194, 0.8);
+    z-index: 5;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+
+  .nav-toggle {
+    display: inline-block;
   }
 
   .menu-ul {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
   }
-
-  .wide-nav {
-    display: block;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    margin: 0;
-    padding: 15px 0;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    position: fixed;
-    right: 0;
-    background-color: rgba(189, 94, 194, 0.5);
+  .menu-ul li {
+    color: white;
+    font-family: Regular Made Bon Voyage;
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
+  .menu-ul li a:hover,
+.menu-ul li a:focus {
+    background-image: none;
+    border: 2px solid white;
   }
 
   header {
@@ -894,7 +904,6 @@ header h2 {
   header h2 {
     font-size: 30px;
     font-size: 1.5rem;
-    font-weight: lighter;
   }
   header .image-container {
     max-width: 60%;
@@ -921,6 +930,5 @@ header h2 {
   .contact h3 {
     font-size: 50px;
     font-size: 2.5rem;
-    font-weight: lighter;
   }
 }
