@@ -13,27 +13,31 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
 		/>
-		<link rel="stylesheet" href="./styles/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
 			rel="stylesheet"
 		/>
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 
 	<body id="home">
-		<nav>
+		<nav class="mobile-nav">
+			<button class="nav-toggle">
+				<span class="bar-top"></span>
+				<span class="bar-mid"></span>
+				<span class="bar-bot"></span>
+			</button>
+		</nav>
+		<!-- mobile nav ends -->
+
+		<nav class="navigation">
 			<div class="wrapper">
-				<button type="button" class="hamburger">
-					<span class="line"></span>
-					<span class="line"></span>
-					<span class="line"></span>
-				</button>
 				<ul class="menu-ul">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -45,33 +49,6 @@
 			<!-- wrapper ends -->
 		</nav>
 		<!-- nav ends -->
-
-		<!-- <div class="side-icons">
-			<a href="#home"><i class="fa-solid fa-circle"></i></a>
-
-			<a href="#about"><i class="fa-solid fa-circle"></i></a>
-
-			<a href="#skills"><i class="fa-solid fa-circle"></i></a>
-
-			<a href="#projects"><i class="fa-solid fa-circle"></i></a>
-
-			<a href="#contact"><i class="fa-solid fa-circle"></i></a>
-		</div> -->
-
-		<!-- <div class="side-icons">
-			<a href="https://github.com/victoria-reis" aria-label="GitHub Link"
-				><i class="fa-brands fa-github" aria-hidden="true"></i
-			></a>
-			<a
-				href="https://www.linkedin.com/in/-victoriareis/"
-				aria-label="LinkedIn Link"
-				><i class="fa-brands fa-linkedin" aria-hidden="true"></i
-			></a>
-			<a href="mailto:victoriareis_@outlook.com" aria-label="Email Me"
-				><i class="fa-solid fa-envelope" aria-hidden="true"></i
-			></a>
-		</div> -->
-		<!-- side-icons ends -->
 
 		<header>
 			<div class="wrapper">
@@ -103,7 +80,7 @@
 				</div>
 				<!-- wrapper ends -->
 			</section>
-			<!-- about ends -->
+			<!-- about section ends -->
 
 			<section class="skills reveal" id="skills">
 				<div class="wrapper">
@@ -156,15 +133,15 @@
 							<p>Accessibility</p>
 						</li>
 					</ul>
+					<!-- skills ul ends -->
 				</div>
 				<!-- wrapper ends -->
 			</section>
-			<!-- skills ends -->
+			<!-- skills section ends -->
 
 			<section class="projects reveal" id="projects">
 				<div class="wrapper">
 					<h3>Projects</h3>
-
 					<ul>
 						<li class="js-quiz reveal">
 							<div class="project-container">
@@ -190,6 +167,7 @@
 							</div>
 							<!-- project container ends -->
 						</li>
+						<!-- js-quiz ends -->
 						<li class="planted reveal">
 							<div class="project-container">
 								<div class="image-container">
@@ -214,15 +192,13 @@
 							</div>
 							<!-- project container ends -->
 						</li>
-
+						<!-- planted ends -->
 						<li class="tasty reveal">
 							<div class="project-container">
 								<div class="image-container">
 									<img src="./assets/images/tasty-mockup.png" alt="" />
 								</div>
-
 								<h4>Tasty</h4>
-
 								<div class="project-info">
 									<p>
 										<a href="https://codepen.io/victoriareis/full/OJOdbbG"
@@ -230,7 +206,6 @@
 										>
 									</p>
 								</div>
-
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 									Soluta, omnis. Ipsum reprehenderit modi recusandae maxime,
@@ -240,11 +215,12 @@
 							</div>
 							<!-- project container ends -->
 						</li>
-						<!-- </div> -->
+						<!-- tasty ends -->
 					</ul>
 				</div>
 				<!-- wrapper ends -->
 			</section>
+			<!-- projects section ends -->
 
 			<section class="contact reveal" id="contact">
 				<div class="wrapper">
@@ -274,7 +250,9 @@
 				</div>
 				<!-- wrapper ends -->
 			</section>
+			<!-- contact section ends -->
 		</main>
+		<!-- main ends -->
 
 		<footer>
 			<div class="wrapper">
@@ -282,6 +260,7 @@
 			</div>
 			<!-- wrapper ends -->
 		</footer>
+		<!-- footer ends -->
 	</body>
 	<script src="./scripts/app.js"></script>
 </html>
