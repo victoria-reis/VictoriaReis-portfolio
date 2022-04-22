@@ -264,11 +264,11 @@ template {
 
 @font-face {
   font-family: Thin Made Bon Voyage;
-  src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-thin.otf");
+  src: url("../assets/typography/made-bon-voyage-thin.otf") format("opentype");
 }
 @font-face {
   font-family: Regular Made Bon Voyage;
-  src: url("../assets/typography/made-bon-voyage-cufonfonts/made-bon-voyage-regular.otf");
+  src: url("../assets/typography/made-bon-voyage-regular.otf") format("opentype");
 }
 html {
   font-size: 125%;
@@ -308,9 +308,11 @@ img {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-.fa-solid:hover,
+.fa-solid:hover, .fa-solid:focus,
 .fa-brands:hover,
-.fa-regular:hover {
+.fa-brands:focus,
+.fa-regular:hover,
+.fa-regular:focus {
   color: #bd5ec2;
 }
 
@@ -326,7 +328,7 @@ img {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-.material-icons-outlined:hover {
+.material-icons-outlined:hover, .material-icons-outlined:focus {
   color: #bd5ec2;
 }
 
@@ -334,6 +336,7 @@ a {
   text-decoration: none;
   color: inherit;
   padding: 15px;
+  border-radius: 5px;
 }
 
 ul {
@@ -409,7 +412,7 @@ footer p {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.menu-ul li a:hover {
+.menu-ul li a:hover, .menu-ul li a:focus {
   background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
   background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   color: white;
@@ -586,7 +589,8 @@ header .image-container {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-.skills ul li i:hover,
+.skills ul li i:hover, .skills ul li i:hover,
+.skills ul li span:hover,
 .skills ul li span:hover {
   color: #bd5ec2;
 }
@@ -608,9 +612,14 @@ header .image-container {
   width: 70%;
   margin: 0 auto;
 }
-.js-quiz .project-container,
-.planted .project-container,
-.tasty .project-container {
+.js-quiz h4,
+.planted h4,
+.tasty h4 {
+  width: 50%;
+  margin: 0;
+}
+
+.project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,11 +632,11 @@ header .image-container {
       -ms-flex-align: center;
           align-items: center;
 }
-.js-quiz h4,
-.planted h4,
-.tasty h4 {
-  width: 50%;
-  margin: 0;
+.project-container p {
+  margin: 10px auto;
+}
+.project-container .project-tools {
+  margin: 0 auto;
 }
 
 .planted {
@@ -648,7 +657,7 @@ header .image-container {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.project-info a:hover {
+.project-info a:hover, .project-info a:focus {
   background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
   background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
   color: white;
@@ -693,6 +702,11 @@ header .image-container {
 }
 .fa-chevron-up a {
   padding: 15px;
+}
+
+.email-address:hover, .email-address:focus {
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
 }
 
 @-webkit-keyframes arrow {
@@ -755,43 +769,6 @@ header .image-container {
 
   .wrapper {
     width: 95%;
-  }
-
-  .navigation .wrapper {
-    width: 100vw;
-    height: 100vh;
-    right: -100vw;
-    text-align: center;
-    position: fixed;
-    background-color: rgba(189, 94, 194, 0.8);
-    z-index: 5;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-  }
-
-  .nav-toggle {
-    display: inline-block;
-  }
-
-  .menu-ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 0 auto;
-  }
-  .menu-ul li {
-    color: white;
-    font-family: Regular Made Bon Voyage;
-    font-size: 30px;
-    font-size: 1.5rem;
-  }
-  .menu-ul li a:hover,
-.menu-ul li a:focus {
-    background-image: none;
-    border: 2px solid white;
   }
 
   header {
@@ -859,18 +836,12 @@ header h2 {
   width: 60%;
   margin: 0 auto;
 }
-.js-quiz .project-container,
-.planted .project-container,
-.tasty .project-container {
+
+.project-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.js-quiz .project-container p,
-.planted .project-container p,
-.tasty .project-container p {
-  margin: 10px auto;
 }
 
 .js-quiz .project-container {
@@ -894,6 +865,45 @@ header h2 {
 }
 
 @media (max-width: 750px) {
+  .navigation .wrapper {
+    width: 100vw;
+    height: 100vh;
+    right: -100vw;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(189, 94, 194, 0.8);
+    z-index: 5;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .menu-ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+  }
+  .menu-ul li {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
+  .menu-ul li a {
+    background-color: white;
+  }
+  .menu-ul li a:hover, .menu-ul li a:focus {
+    color: black;
+    font-weight: bolder;
+    background-image: none;
+    border: 2px solid white;
+  }
+
   header {
     padding-top: 100px;
   }
