@@ -1,13 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria Reis Portfolio</title>
-</head>
-<body>
-    <h1>Welcome to my portfolio!</h1>
-    <h2>Full version coming soon!</h2>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Victoria Reis Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/a0e4c21e13.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body id="home">
+		<nav>
+			<div class="wrapper">
+				<button type="button" class="hamburger">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</button>
+				<ul class="menu-ul">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<!-- wrapper ends -->
+		</nav>
+		<!-- nav ends -->
+
+		<!-- <div class="side-icons">
+			<a href="#home"><i class="fa-solid fa-circle"></i></a>
+
+			<a href="#about"><i class="fa-solid fa-circle"></i></a>
+
+			<a href="#skills"><i class="fa-solid fa-circle"></i></a>
+
+			<a href="#projects"><i class="fa-solid fa-circle"></i></a>
+
+			<a href="#contact"><i class="fa-solid fa-circle"></i></a>
+		</div> -->
+
+		<!-- <div class="side-icons">
+			<a href="https://github.com/victoria-reis" aria-label="GitHub Link"
+				><i class="fa-brands fa-github" aria-hidden="true"></i
+			></a>
+			<a
+				href="https://www.linkedin.com/in/-victoriareis/"
+				aria-label="LinkedIn Link"
+				><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+			></a>
+			<a href="mailto:victoriareis_@outlook.com" aria-label="Email Me"
+				><i class="fa-solid fa-envelope" aria-hidden="true"></i
+			></a>
+		</div> -->
+		<!-- side-icons ends -->
+
+		<header>
+			<div class="wrapper">
+				<div>
+					<h1>Hi there, <span>I'm Victoria Reis</span></h1>
+					<h2>Frontend Web Developer</h2>
+				</div>
+				<div class="image-container image-shadow">
+					<img src="https://placekitten.com/460/570" alt="" />
+					<!-- <div class="image-shadow"></div> -->
+				</div>
+			</div>
+			<!-- wrapper ends -->
+		</header>
+		<!-- header ends -->
+
+		<main>
+			<section class="about reveal" id="about">
+				<div class="wrapper">
+					<h3>About Me</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+						ab nulla voluptatibus praesentium, officiis maxime rem repellendus
+						expedita neque facilis veritatis voluptatem ad eaque laudantium, ex,
+						quas explicabo. Nesciunt a at rem quo nam iusto soluta quia.
+						Repellat, dolore. Perferendis ducimus nihil id vitae aspernatur
+						dolore tempora temporibus ad quibusdam?
+					</p>
+				</div>
+				<!-- wrapper ends -->
+			</section>
+			<!-- about ends -->
+
+			<section class="skills reveal" id="skills">
+				<div class="wrapper">
+					<h3>Skills</h3>
+					<ul>
+						<li>
+							<i class="devicon-html5-plain" aria-hidden="true"></i>
+							<p>HTML5</p>
+						</li>
+						<li>
+							<i class="devicon-css3-plain" aria-hidden="true"></i>
+							<p>CSS</p>
+						</li>
+						<li>
+							<i class="devicon-sass-original" aria-hidden="true"></i>
+							<p>Sass</p>
+						</li>
+						<li>
+							<i class="devicon-javascript-plain" aria-hidden="true"></i>
+							<p>JavaScript</p>
+						</li>
+						<li>
+							<i class="devicon-react-original" aria-hidden="true"></i>
+							<p>React</p>
+						</li>
+						<li>
+							<i class="devicon-jquery-plain" aria-hidden="true"></i>
+							<p>jQuery</p>
+						</li>
+						<li>
+							<i class="devicon-git-plain" aria-hidden="true"></i>
+							<p>Git</p>
+						</li>
+						<li>
+							<i class="devicon-firebase-plain" aria-hidden="true"></i>
+							<p>Firebase</p>
+						</li>
+						<li>
+							<i class="devicon-github-original" aria-hidden="true"></i>
+							<p>GitHub</p>
+						</li>
+						<li>
+							<span class="material-icons-outlined" aria-hidden="true">
+								devices
+							</span>
+							<p>Responsive Design</p>
+						</li>
+						<li>
+							<i class="fa-regular fa-universal-access" aria-hidden="true"></i>
+							<p>Accessibility</p>
+						</li>
+					</ul>
+				</div>
+				<!-- wrapper ends -->
+			</section>
+			<!-- skills ends -->
+
+			<section class="projects reveal" id="projects">
+				<div class="wrapper">
+					<h3>Projects</h3>
+
+					<ul>
+						<li class="js-quiz reveal">
+							<div class="project-container">
+								<div class="image-container">
+									<img src="./assets/images/js-quiz-mockup.png" alt="" />
+								</div>
+								<h4>Tech-Tacular Test</h4>
+								<div class="project-info">
+									<p>
+										<a href="https://calm-narwhal-41d834.netlify.app/">Live</a
+										>|<a
+											href="https://github.com/victoria-reis/js-quiz-new-design"
+											>GitHub</a
+										>
+									</p>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Soluta, omnis. Ipsum reprehenderit modi recusandae maxime,
+									voluptates fuga asperiores. Magnam odio est rerum nisi
+									explicabo ipsum iste dolore? Nobis, omnis blanditiis.
+								</p>
+							</div>
+							<!-- project container ends -->
+						</li>
+						<li class="planted reveal">
+							<div class="project-container">
+								<div class="image-container">
+									<img src="./assets/images/planted-mockup.png" alt="" />
+								</div>
+								<h4>Planted</h4>
+								<div class="project-info">
+									<p>
+										<a href="https://epic-edison-fd475c.netlify.app/">Live</a
+										>|<a
+											href="https://github.com/victoria-reis/project-1-planted"
+											>GitHub</a
+										>
+									</p>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Soluta, omnis. Ipsum reprehenderit modi recusandae maxime,
+									voluptates fuga asperiores. Magnam odio est rerum nisi
+									explicabo ipsum iste dolore? Nobis, omnis blanditiis.
+								</p>
+							</div>
+							<!-- project container ends -->
+						</li>
+
+						<li class="tasty reveal">
+							<div class="project-container">
+								<div class="image-container">
+									<img src="./assets/images/tasty-mockup.png" alt="" />
+								</div>
+
+								<h4>Tasty</h4>
+
+								<div class="project-info">
+									<p>
+										<a href="https://codepen.io/victoriareis/full/OJOdbbG"
+											>CodePen</a
+										>
+									</p>
+								</div>
+
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Soluta, omnis. Ipsum reprehenderit modi recusandae maxime,
+									voluptates fuga asperiores. Magnam odio est rerum nisi
+									explicabo ipsum iste dolore? Nobis, omnis blanditiis.
+								</p>
+							</div>
+							<!-- project container ends -->
+						</li>
+						<!-- </div> -->
+					</ul>
+				</div>
+				<!-- wrapper ends -->
+			</section>
+
+			<section class="contact reveal" id="contact">
+				<div class="wrapper">
+					<a href="#home" aria-label="Back to Home"
+						><i class="fa-solid fa-chevron-up" aria-hidden="true"></i
+					></a>
+					<h3>Contact Me</h3>
+					<p>
+						<a href="mailto:victoriareis_@outlook.com"
+							>victoriareis_@outlook.com</a
+						>
+					</p>
+
+					<div class="contact-icons">
+						<a href="https://github.com/victoria-reis" aria-label="GitHub Link"
+							><i class="fa-brands fa-github" aria-hidden="true"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/-victoriareis/"
+							aria-label="LinkedIn Link"
+							><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+						></a>
+						<a href="mailto:victoriareis_@outlook.com" aria-label="Email Me"
+							><i class="fa-solid fa-envelope" aria-hidden="true"></i
+						></a>
+					</div>
+				</div>
+				<!-- wrapper ends -->
+			</section>
+		</main>
+
+		<footer>
+			<div class="wrapper">
+				<p>Developed with ♥ by Victoria Reis</p>
+			</div>
+			<!-- wrapper ends -->
+		</footer>
+	</body>
+	<script src="./scripts/app.js"></script>
 </html>

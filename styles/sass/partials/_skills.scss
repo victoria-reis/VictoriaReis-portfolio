@@ -1,0 +1,54 @@
+.skills {
+	padding: 120px 0;
+	ul {
+		margin: 0 auto;
+		max-width: 90%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+		li {
+			max-width: 150px;
+			width: 150px;
+			margin: 20px auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+
+			p {
+				text-align: center;
+				max-width: 100%;
+				margin: 5px auto;
+			}
+
+			.material-icons-outlined {
+				margin-top: 5px;
+				margin-bottom: -15px;
+			}
+
+			i,
+			span {
+				@include font-size(70);
+				display: block;
+				background-color: $pink;
+				background-image: linear-gradient(
+					90deg,
+					$purple 0%,
+					$pink 30%,
+					$coral 70%,
+					$salmon 90%,
+					$yellow 100%
+				);
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+				transition: 0.8s;
+				&:hover {
+					color: $purple;
+				}
+			}
+		}
+	}
+}

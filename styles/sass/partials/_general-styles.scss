@@ -1,0 +1,121 @@
+html {
+	font-size: 125%;
+	font-family: $text-font;
+	color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: radial-gradient(
+		circle,
+		rgba(189, 94, 194, 0.15),
+		rgba(255, 122, 135, 0.15),
+		rgba(255, 199, 68, 0.1)
+	);
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 85%;
+	max-width: 1400px;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.fa-solid,
+.fa-brands,
+.fa-regular {
+	font-family: fontAwesome;
+	font-style: normal;
+	display: block;
+	background-color: $pink;
+	background-image: linear-gradient(
+		90deg,
+		$purple 0%,
+		$pink 30%,
+		$coral 70%,
+		$salmon 90%,
+		$yellow 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: 0.8s;
+	&:hover {
+		color: $purple;
+	}
+}
+
+.material-icons-outlined {
+	font-family: "Material Icons";
+	display: block;
+	background-color: $pink;
+	background-image: linear-gradient(
+		90deg,
+		$purple 0%,
+		$pink 30%,
+		$coral 70%,
+		$salmon 90%,
+		$yellow 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: 0.8s;
+	&:hover {
+		color: $purple;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	padding: 15px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin: 0;
+		list-style: none;
+	}
+}
+
+h1 {
+	@include h1-font;
+}
+
+h2 {
+	@include h2-font;
+}
+
+h3 {
+	@include h3-font;
+}
+
+h4 {
+	@include h4-font;
+}
+
+footer {
+	p {
+		text-align: center;
+		margin: 40px 0 10px;
+	}
+}
+
+.reveal {
+	position: relative;
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.reveal.active {
+	opacity: 1;
+}
