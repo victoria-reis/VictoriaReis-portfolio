@@ -14,3 +14,12 @@ const reveal = () => {
 	}
 };
 window.addEventListener("scroll", reveal);
+
+const hamburgerMenu = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".menu-ul");
+const menuActive = () => {
+	hamburgerMenu.classList.toggle("active");
+	mobileMenu.classList.toggle("wide-nav");
+};
+
+hamburgerMenu.addEventListener("click", menuActive);

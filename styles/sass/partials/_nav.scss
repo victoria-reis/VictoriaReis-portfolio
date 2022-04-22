@@ -1,31 +1,67 @@
 nav {
 	.wrapper {
 		display: flex;
-		ul {
-			margin: 30px -15px 20px auto;
-			display: flex;
-			justify-content: space-between;
+	}
+}
 
-			li {
-				text-transform: uppercase;
-				font-family: $text-font;
-				font-weight: lighter;
+.menu-ul {
+	margin: 30px -15px 20px auto;
+	display: flex;
+	justify-content: space-between;
 
-				a {
-					transition: 0.5s;
-					&:hover {
-						background-image: linear-gradient(
-							90deg,
-							$purple 0%,
-							$pink 30%,
-							$coral 70%,
-							$salmon 90%,
-							$yellow 100%
-						);
-						color: white;
-					}
-				}
+	li {
+		text-transform: uppercase;
+		font-family: $text-font;
+		font-weight: lighter;
+
+		a {
+			transition: 0.5s;
+			&:hover {
+				background-image: linear-gradient(
+					90deg,
+					$purple 0%,
+					$pink 30%,
+					$coral 70%,
+					$salmon 90%,
+					$yellow 100%
+				);
+				color: white;
 			}
 		}
+	}
+}
+
+.hamburger {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	display: none;
+
+	.line {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: $purple;
+		margin: 10px;
+		border-radius: 4px;
+		transition: transform 0.5s;
+	}
+}
+
+.hamburger.active {
+	.line:nth-child(1) {
+		transform: translateY(17.2px);
+		rotate: 45deg;
+	}
+	.line:nth-child(2) {
+		opacity: 0;
+	}
+	.line:nth-child(3) {
+		transform: translateY(-17.2px);
+		rotate: -45deg;
 	}
 }

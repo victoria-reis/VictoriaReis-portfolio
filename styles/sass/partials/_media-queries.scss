@@ -32,6 +32,34 @@
 }
 
 @media (max-width: 950px) {
+	html {
+		font-size: 113%;
+	}
+	.wrapper {
+		width: 95%;
+	}
+	.hamburger {
+		display: inline;
+		z-index: 10;
+	}
+
+	.menu-ul {
+		display: none;
+	}
+
+	.wide-nav {
+		display: block;
+		justify-content: stretch;
+		margin: 0;
+		padding: 15px 0;
+		width: 100vw;
+		height: 100vh;
+		text-align: center;
+		position: fixed;
+		right: 0;
+		background-color: rgba(189, 94, 194, 0.5);
+	}
+
 	header {
 		height: auto;
 		.wrapper {
@@ -60,19 +88,93 @@
 		p {
 			text-align: center;
 			margin: 0 auto;
-			max-width: 90%;
+			max-width: 100%;
 		}
 	}
 
 	.skills {
 		text-align: center;
+		ul {
+			li {
+				width: 100px;
+			}
+		}
+	}
+}
+
+.projects {
+	padding: 0;
+	text-align: center;
+	h4 {
+		margin-top: 20px;
+	}
+}
+
+.js-quiz,
+.planted,
+.tasty {
+	max-width: 100%;
+	margin: 100px auto;
+	h4 {
+		width: 80%;
+		margin: 0;
 	}
 
-	.projects {
-		padding: 0;
+	.image-container {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.project-container {
+		flex-direction: column;
+
+		p {
+			margin: 10px auto;
+		}
+	}
+}
+
+.js-quiz {
+	.project-container {
+		margin-top: -25px;
+	}
+}
+
+.planted {
+	p {
 		text-align: center;
-		h4 {
-			margin-top: 20px;
+	}
+}
+
+.project-info {
+	padding: 0;
+}
+
+.contact {
+	h3 {
+		margin: 60px auto 0;
+	}
+}
+
+.contact-icons {
+	margin: 10px auto;
+}
+
+@media (max-width: 750px) {
+	header {
+		padding-top: 100px;
+
+		h1 {
+			@include font-size(60);
+		}
+
+		h2 {
+			@include font-size(30);
+			font-weight: lighter;
+		}
+
+		.image-container {
+			max-width: 60%;
 		}
 	}
 
@@ -87,36 +189,14 @@
 		}
 
 		.image-container {
-			width: 85%;
-			margin: 0 auto;
+			width: 75%;
 		}
-
-		.project-container {
-			flex-direction: column;
-
-			p {
-				margin: 10px auto;
-			}
-		}
-	}
-
-	.planted {
-		p {
-			text-align: center;
-		}
-	}
-
-	.project-info {
-		padding: 0;
 	}
 
 	.contact {
 		h3 {
-			margin: 60px auto 0;
+			@include font-size(50);
+			font-weight: lighter;
 		}
-	}
-
-	.contact-icons {
-		margin: 10px auto;
 	}
 }
