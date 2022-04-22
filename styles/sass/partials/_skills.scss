@@ -33,18 +33,12 @@
 				@include font-size(70);
 				display: block;
 				background-color: $pink;
-				background-image: linear-gradient(
-					90deg,
-					$purple 0%,
-					$pink 30%,
-					$coral 70%,
-					$salmon 90%,
-					$yellow 100%
-				);
+				@include gradient-background;
 				-webkit-background-clip: text;
 				background-clip: text;
 				color: transparent;
 				transition: 0.8s;
+				&:hover,
 				&:hover {
 					color: $purple;
 				}

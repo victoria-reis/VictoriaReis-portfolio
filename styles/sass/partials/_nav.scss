@@ -16,15 +16,9 @@
 
 		a {
 			transition: 0.5s;
-			&:hover {
-				background-image: linear-gradient(
-					90deg,
-					$purple 0%,
-					$pink 30%,
-					$coral 70%,
-					$salmon 90%,
-					$yellow 100%
-				);
+			&:hover,
+			&:focus {
+				@include gradient-background;
 				color: white;
 			}
 		}
