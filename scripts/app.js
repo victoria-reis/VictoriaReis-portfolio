@@ -15,9 +15,20 @@ window.addEventListener("scroll", () => {
 	}
 });
 
-// mobile menu animation
-const mobileMenuIcon = document.querySelector(".nav-toggle");
+// portrait switch on mouseover
+const portrait = document.querySelector("img");
+portrait.addEventListener("mouseenter", () => {
+	portrait.src = "./assets/images/portrait-2-2.jpg";
+	portrait.alt = "portrait of Victoria Reis laughing";
+});
 
+portrait.addEventListener("mouseleave", () => {
+	portrait.src = "./assets/images/portrait-1.jpg";
+	portrait.alt = "portrait of Victoria Reis";
+});
+
+// mobile menu button open/close
+const mobileMenuIcon = document.querySelector(".nav-toggle");
 mobileMenuIcon.addEventListener("click", () => {
 	mobileMenuIcon.classList.toggle("opened");
 	if (mobileMenuIcon.classList[1] === "opened") {

@@ -263,12 +263,12 @@ template {
 }
 
 @font-face {
-  font-family: Thin Made Bon Voyage;
-  src: url("../assets/typography/made-bon-voyage-thin.otf") format("opentype");
+  font-family: "Thin Made Bon Voyage";
+  src: url("../assets/typography/made-bon-voyage-thin.woff") format("woff");
 }
 @font-face {
-  font-family: Regular Made Bon Voyage;
-  src: url("../assets/typography/made-bon-voyage-regular.otf") format("opentype");
+  font-family: "Regular Made Bon Voyage";
+  src: url("../assets/typography/made-bon-voyage-regular.woff") format("woff");
 }
 html {
   font-size: 125%;
@@ -351,19 +351,19 @@ ul li {
 h1 {
   font-size: 80px;
   font-size: 4rem;
-  font-family: "Thin Made Bon Voyage", "serif";
+  font-family: "Thin Made Bon Voyage", serif;
 }
 
 h2 {
   font-size: 50px;
   font-size: 2.5rem;
-  font-family: "Thin Made Bon Voyage", "serif";
+  font-family: "Thin Made Bon Voyage", serif;
 }
 
 h3 {
   font-size: 60px;
   font-size: 3rem;
-  font-family: "Thin Made Bon Voyage", "serif";
+  font-family: "Thin Made Bon Voyage", serif;
 }
 
 h4 {
@@ -530,6 +530,7 @@ header .image-container {
 }
 .about p {
   max-width: 80%;
+  line-height: 1.7rem;
 }
 
 .skills {
