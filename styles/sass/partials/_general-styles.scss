@@ -2,6 +2,7 @@ html {
 	font-size: 125%;
 	font-family: $text-font;
 	color: black;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -31,7 +32,7 @@ img {
 .fa-regular {
 	font-family: fontAwesome;
 	font-style: normal;
-	display: block;
+	display: inline-block;
 	background-color: $pink;
 	@include gradient-background;
 	-webkit-background-clip: text;
@@ -57,6 +58,19 @@ img {
 	&:focus {
 		color: $purple;
 	}
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+	@include font-size(35);
+	animation: arrow 1s linear 0s infinite normal;
+	a {
+		padding: 15px;
+	}
+}
+
+.fa-chevron-down {
+	margin-left: -15px;
 }
 
 a {
@@ -107,4 +121,14 @@ footer {
 
 .reveal.active {
 	opacity: 1;
+}
+
+// arrow scroll animation
+@keyframes arrow {
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }

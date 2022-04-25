@@ -20,14 +20,6 @@
 	}
 }
 
-.fa-chevron-up {
-	@include font-size(40);
-	a {
-		padding: 15px;
-	}
-	animation: arrow 1s linear 0s infinite normal;
-}
-
 .email-address {
 	&:hover,
 	&:focus {
@@ -35,11 +27,39 @@
 	}
 }
 
-@keyframes arrow {
-	50% {
-		transform: translateY(-10px);
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 20px auto;
+}
+
+input,
+textarea,
+button[type="submit"] {
+	margin: 3px auto;
+	width: 50%;
+	border: none;
+	padding: 10px;
+	font-family: $text-font;
+	border-radius: 10px;
+	&:hover,
+	&:focus {
+		outline: 2px solid $purple;
 	}
-	100% {
-		transform: translateY(0px);
+}
+
+button[type="submit"] {
+	width: 170px;
+	background-color: $purple;
+	color: white;
+	margin-top: 15px;
+	&:hover,
+	&:focus {
+		@include gradient-background;
 	}
+}
+
+textarea {
+	height: 200px;
 }
