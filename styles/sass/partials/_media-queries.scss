@@ -29,6 +29,11 @@
 	.projects {
 		padding-top: 80px;
 	}
+
+	input,
+	textarea {
+		width: 60%;
+	}
 }
 
 @media (max-width: 950px) {
@@ -43,6 +48,10 @@
 		height: auto;
 		.wrapper {
 			flex-direction: column;
+
+			img:hover {
+				cursor: auto;
+			}
 		}
 
 		div:nth-of-type(1) {
@@ -174,7 +183,7 @@
 	}
 
 	header {
-		padding-top: 100px;
+		padding-top: 80px;
 
 		h1 {
 			@include font-size(60);
@@ -208,5 +217,10 @@
 		h3 {
 			@include font-size(50);
 		}
+	}
+
+	input,
+	textarea {
+		width: 90%;
 	}
 }
