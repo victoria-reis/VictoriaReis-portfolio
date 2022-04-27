@@ -873,61 +873,61 @@ header h2 {
   .skills ul li {
     width: 100px;
   }
-}
-.projects {
-  padding: 0;
-  text-align: center;
-}
-.projects h4 {
-  margin-top: 20px;
-}
 
-.js-quiz,
+  .projects {
+    padding: 0;
+    text-align: center;
+  }
+  .projects h4 {
+    margin-top: 20px;
+  }
+
+  .js-quiz,
 .planted,
 .tasty {
-  max-width: 100%;
-  margin: 100px auto;
-}
-.js-quiz h4,
+    max-width: 100%;
+    margin: 100px auto;
+  }
+  .js-quiz h4,
 .planted h4,
 .tasty h4 {
-  width: 80%;
-  margin: 0;
-}
-.js-quiz .image-container,
+    width: 80%;
+    margin: 0;
+  }
+  .js-quiz .image-container,
 .planted .image-container,
 .tasty .image-container {
-  width: 60%;
-  margin: 0 auto;
-}
+    width: 60%;
+    margin: 0 auto;
+  }
 
-.project-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+  .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 
-.js-quiz .project-container {
-  margin-top: -25px;
-}
+  .js-quiz .project-container {
+    margin-top: -25px;
+  }
 
-.planted p {
-  text-align: center;
-}
+  .planted p {
+    text-align: center;
+  }
 
-.project-info {
-  padding: 0;
-}
+  .project-info {
+    padding: 0;
+  }
 
-.contact h3 {
-  margin: 60px auto 0;
-}
+  .contact h3 {
+    margin: 60px auto 0;
+  }
 
-.contact-icons {
-  margin: 10px auto;
+  .contact-icons {
+    margin: 10px auto;
+  }
 }
-
 @media (max-width: 750px) {
   .navigation .wrapper {
     width: 100vw;
