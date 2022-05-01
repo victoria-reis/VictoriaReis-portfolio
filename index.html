@@ -231,15 +231,18 @@
 						><i class="fa-solid fa-chevron-up" aria-hidden="true"></i
 					></a>
 					<h3>Contact Me</h3>
-					<form action="POST" class="contactForm" name="contact" data-netlify="true">
+					<form method="POST" class="contactForm" action="/thank-you.html" name="contactForm" data-netlify="true">
+
 						<label for="name" class="sr-only">Name</label>
-						<input type="text" id="name" placeholder="Name" required>
+						<input type="text" name="name" id="name" placeholder="Name" required>
 
 						<label for="email" class="sr-only">Email</label>
-						<input type="email" id="email" placeholder="Email address" required>
+						<input type="email" name="email" id="email" placeholder="Email address" required>
 
 						<label for="message" class="sr-only">Message for us</label>
-						<textarea name="message" id="message" placeholder="Message" maxlength="200" required></textarea>
+						<textarea name="message" name="message" id="message" placeholder="Message" maxlength="200" required></textarea>
+
+						<div data-netlify-recaptcha="true"></div>
 
 						<button type="submit">Send</button>
                 	</form>

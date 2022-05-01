@@ -657,6 +657,7 @@ header img:hover {
 .js-quiz h4,
 .planted h4,
 .tasty h4 {
+  text-align: center;
   width: 50%;
   margin: 0;
 }
@@ -667,9 +668,10 @@ header img:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -784,6 +786,43 @@ button[type=submit]:hover, button[type=submit]:focus {
 
 textarea {
   height: 200px;
+}
+
+.thank-you-page h1 {
+  font-size: 40px;
+  font-size: 2rem;
+  font-family: "Regular Made Bon Voyage";
+  text-align: center;
+  margin: 15px auto 10px;
+  line-height: 50px;
+}
+.thank-you-page p {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+.thank-you-page a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  background-color: #bd5ec2;
+  color: white;
+  margin-top: 15px;
+}
+.thank-you-page a:hover, .thank-you-page a:focus {
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd5ec2), color-stop(30%, #f862a7), color-stop(70%, #ff7a87), color-stop(90%, #ffa26a), to(#ffc744));
+  background-image: linear-gradient(90deg, #bd5ec2 0%, #f862a7 30%, #ff7a87 70%, #ffa26a 90%, #ffc744 100%);
+  outline: 2px solid #bd5ec2;
+}
+.thank-you-page section {
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+  min-width: 400px;
 }
 
 @media (max-width: 1200px) {
@@ -952,7 +991,9 @@ header h2 {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: calc((100vh - 400px) / 2);
+    height: 400px;
   }
   .menu-ul li {
     font-size: 30px;
@@ -960,6 +1001,7 @@ header h2 {
   }
   .menu-ul li a {
     background-color: white;
+    padding: 8px 15px;
   }
   .menu-ul li a:hover, .menu-ul li a:focus {
     color: black;
@@ -1009,5 +1051,21 @@ header h2 {
   input,
 textarea {
     width: 90%;
+  }
+
+  .thank-you-page h1 {
+    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 38px;
+  }
+  .thank-you-page section {
+    width: 70%;
+    min-width: auto;
+    padding: 10px;
+  }
+  .thank-you-page a {
+    font-size: 18px;
+    font-size: 0.9rem;
+    width: 60%;
   }
 }

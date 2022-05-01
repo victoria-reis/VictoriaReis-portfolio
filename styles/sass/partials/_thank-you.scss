@@ -1,0 +1,39 @@
+.thank-you-page {
+	h1 {
+		@include font-size(40);
+		font-family: "Regular Made Bon Voyage";
+		text-align: center;
+		margin: 15px auto 10px;
+		line-height: 50px;
+	}
+
+	p {
+		text-align: center;
+		margin: 10px 0 30px;
+	}
+
+	a {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		width: 200px;
+		background-color: $purple;
+		color: white;
+		margin-top: 15px;
+		&:hover,
+		&:focus {
+			@include gradient-background;
+			outline: 2px solid $purple;
+		}
+	}
+	section {
+		background-color: white;
+		display: block;
+		margin: 0 auto;
+		margin-top: 150px;
+		border-radius: 10px;
+		padding: 20px;
+		width: 40%;
+		min-width: 400px;
+	}
+}
