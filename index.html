@@ -66,7 +66,9 @@
 			</div>
 			<!-- wrapper ends -->
 			<div class="wrapper">
-				<a href="#about" aria-label="Interact to see more"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+				<a href="#about" aria-label="Interact to see more"
+					><i class="fa-solid fa-chevron-down" aria-hidden="true"></i
+				></a>
 			</div>
 		</header>
 		<!-- header ends -->
@@ -76,9 +78,17 @@
 				<div class="wrapper">
 					<h3>About Me</h3>
 					<p>
-						I'm Victoria, my pronouns are she/her. I'm a Front-End Web Developer based in Toronto, ON with 5+ years of experience in Hospitality and Retail. With my attention to detail, communication and creativity I bring responsive, clean and accessible applications ideas to life. I'm looking for opportunities to learn new languages and frameworks, improve my skills, and give back to the tech community.
+						I'm Victoria, my pronouns are she/her. I'm a Front-End Web Developer
+						based in Toronto, ON with 5+ years of experience in Hospitality and
+						Retail. With my attention to detail, communication and creativity I
+						bring responsive, clean and accessible applications ideas to life.
+						I'm looking for opportunities to learn new languages and frameworks,
+						improve my skills, and give back to the tech community.
 					</p>
-					<p>When I'm not coding you can find me taking care of my plant children, hanging out with friends or making some kind of dessert. </p>
+					<p>
+						When I'm not coding you can find me taking care of my plant
+						children, hanging out with friends or making some kind of dessert.
+					</p>
 				</div>
 				<!-- wrapper ends -->
 			</section>
@@ -145,6 +155,32 @@
 				<div class="wrapper">
 					<h3>Projects</h3>
 					<ul>
+						<li class="self-love reveal">
+							<div class="project-container">
+								<div class="image-container">
+									<img
+										src="./assets/images/self-love-mockup.png"
+										alt="Self-love Reminder App web page displayed both in laptop and smartphone"
+									/>
+								</div>
+								<h4>Self-Love Reminder</h4>
+								<div class="project-info">
+									<p>
+										<a href="https://self-love-reminder.netlify.app/">Live</a
+										>|<a href="https://github.com/victoria-reis/self-love-app"
+											>GitHub</a
+										>
+									</p>
+								</div>
+								<p>App created to remind you to give yourself some love.</p>
+								<div class="project-tools">
+									<p>React</p>
+									<p>SCSS</p>
+									<p>Firebase</p>
+								</div>
+							</div>
+							<!-- project container ends -->
+						</li>
 						<li class="js-quiz reveal">
 							<div class="project-container">
 								<div class="image-container">
@@ -156,17 +192,23 @@
 								<h4>Tech-Tacular Test</h4>
 								<div class="project-info">
 									<p>
-										<a href="https://techtaculartest.netlify.app/">Live</a
-										>|<a
+										<a href="https://techtaculartest.netlify.app/">Live</a>|<a
 											href="https://github.com/victoria-reis/js-quiz-new-design"
 											>GitHub</a
 										>
 									</p>
 								</div>
 								<p>
-									JavaScript knowledge quiz app created and designed by myself and Steve Mishos.
+									JavaScript knowledge quiz app created and designed by myself
+									and Steve Mishos.
 								</p>
-								<p class="project-tools">HTML|SCSS|JavaScript|Pair-programming|Rest API</p>
+								<div class="project-tools">
+									<p>HTML</p>
+									<p>SCSS</p>
+									<p>JavaScript</p>
+									<p>Pair-programming</p>
+									<p>Rest API</p>
+								</div>
 							</div>
 							<!-- project container ends -->
 						</li>
@@ -182,17 +224,21 @@
 								<h4>Planted</h4>
 								<div class="project-info">
 									<p>
-										<a href="https://welcometoplanted.netlify.app/">Live</a
-										>|<a
+										<a href="https://welcometoplanted.netlify.app/">Live</a>|<a
 											href="https://github.com/victoria-reis/project-1-planted"
 											>GitHub</a
 										>
 									</p>
 								</div>
 								<p>
-									PSD conversion into a multi-page, functional, responsive website.
-									<p class="project-tools">HTML|SCSS|JavaScript</p>
+									PSD conversion into a multi-page, functional, responsive
+									website.
 								</p>
+								<div class="project-tools">
+									<p>HTML</p>
+									<p>SCSS</p>
+									<p>JavaScript</p>
+								</div>
 							</div>
 							<!-- project container ends -->
 						</li>
@@ -214,7 +260,11 @@
 									</p>
 								</div>
 								<p>PSD design conversion into responsive website elements.</p>
-								<p class="project-tools">HTML|CSS|CodePen</p>
+								<div class="project-tools">
+									<p>HTML</p>
+									<p>CSS</p>
+									<p>CodePen</p>
+								</div>
 							</div>
 							<!-- project container ends -->
 						</li>
@@ -231,19 +281,43 @@
 						><i class="fa-solid fa-chevron-up" aria-hidden="true"></i
 					></a>
 					<h3>Contact Me</h3>
-					<form method="POST" class="contactForm" action="/thank-you.html" name="contactForm" data-netlify="true">
-
+					<form
+						method="POST"
+						class="contactForm"
+						action="/thank-you.html"
+						name="contactForm"
+						data-netlify="true"
+					>
 						<label for="name" class="sr-only">Name</label>
-						<input type="text" name="name" id="name" placeholder="Name" required>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Name"
+							required
+						/>
 
 						<label for="email" class="sr-only">Email</label>
-						<input type="email" name="email" id="email" placeholder="Email address" required>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email address"
+							required
+						/>
 
 						<label for="message" class="sr-only">Message for us</label>
-						<textarea name="message" name="message" id="message" placeholder="Message" maxlength="200" required></textarea>
+						<textarea
+							name="message"
+							name="message"
+							id="message"
+							placeholder="Message"
+							maxlength="200"
+							required
+						></textarea>
 
 						<button type="submit">Send</button>
-                	</form>
+					</form>
 					<!-- form ends -->
 
 					<p>

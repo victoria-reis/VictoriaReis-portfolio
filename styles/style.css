@@ -352,8 +352,8 @@ img {
 a {
   text-decoration: none;
   color: inherit;
-  padding: 15px;
-  border-radius: 5px;
+  padding: 5px 15px;
+  border-radius: 50px;
 }
 
 ul {
@@ -466,6 +466,7 @@ footer p {
   top: 0;
   right: 0;
   z-index: 10;
+  cursor: pointer;
 }
 
 .nav-toggle:focus {
@@ -641,6 +642,7 @@ header img:hover {
   padding: 120px 0 80px;
 }
 
+.self-love,
 .js-quiz,
 .planted,
 .tasty {
@@ -648,12 +650,14 @@ header img:hover {
   margin: 100px 0;
   margin-right: auto;
 }
+.self-love .image-container,
 .js-quiz .image-container,
 .planted .image-container,
 .tasty .image-container {
   width: 70%;
   margin: 0 auto;
 }
+.self-love h4,
 .js-quiz h4,
 .planted h4,
 .tasty h4 {
@@ -678,17 +682,32 @@ header img:hover {
 }
 .project-container p {
   margin: 10px auto;
+  text-align: center;
 }
 .project-container .project-tools {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project-container .project-tools p {
+  margin: 2px 10px;
+  padding: 5px 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-.planted {
+.planted,
+.self-love {
   margin-right: 0;
   margin-left: auto;
-}
-.planted p {
-  text-align: right;
 }
 
 .project-info {
@@ -868,7 +887,7 @@ textarea {
   }
 
   .wrapper {
-    width: 95%;
+    width: 90%;
   }
 
   header {
@@ -921,19 +940,22 @@ header h2 {
     margin-top: 20px;
   }
 
-  .js-quiz,
+  .self-love,
+.js-quiz,
 .planted,
 .tasty {
     max-width: 100%;
     margin: 100px auto;
   }
-  .js-quiz h4,
+  .self-love h4,
+.js-quiz h4,
 .planted h4,
 .tasty h4 {
     width: 80%;
     margin: 0;
   }
-  .js-quiz .image-container,
+  .self-love .image-container,
+.js-quiz .image-container,
 .planted .image-container,
 .tasty .image-container {
     width: 60%;
@@ -951,7 +973,8 @@ header h2 {
     margin-top: -25px;
   }
 
-  .planted p {
+  .self-love p,
+.planted p {
     text-align: center;
   }
 
@@ -1025,19 +1048,22 @@ header h2 {
     max-width: 60%;
   }
 
-  .js-quiz,
+  .self-love,
+.js-quiz,
 .planted,
 .tasty {
     max-width: 100%;
     margin: 100px auto;
   }
-  .js-quiz h4,
+  .self-love h4,
+.js-quiz h4,
 .planted h4,
 .tasty h4 {
     width: 80%;
     margin: 0;
   }
-  .js-quiz .image-container,
+  .self-love .image-container,
+.js-quiz .image-container,
 .planted .image-container,
 .tasty .image-container {
     width: 75%;
