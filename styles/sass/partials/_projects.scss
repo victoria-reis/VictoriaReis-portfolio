@@ -2,6 +2,7 @@
 	padding: 120px 0 80px;
 }
 
+.refrigeration,
 .self-love,
 .js-quiz,
 .planted,
@@ -19,6 +20,12 @@
 		text-align: center;
 		width: 50%;
 		margin: 0;
+	}
+}
+
+.refrigeration {
+	h4 {
+		line-height: 52px;
 	}
 }
 

@@ -642,6 +642,7 @@ header img:hover {
   padding: 120px 0 80px;
 }
 
+.refrigeration,
 .self-love,
 .js-quiz,
 .planted,
@@ -650,6 +651,7 @@ header img:hover {
   margin: 100px 0;
   margin-right: auto;
 }
+.refrigeration .image-container,
 .self-love .image-container,
 .js-quiz .image-container,
 .planted .image-container,
@@ -657,6 +659,7 @@ header img:hover {
   width: 70%;
   margin: 0 auto;
 }
+.refrigeration h4,
 .self-love h4,
 .js-quiz h4,
 .planted h4,
@@ -664,6 +667,10 @@ header img:hover {
   text-align: center;
   width: 50%;
   margin: 0;
+}
+
+.refrigeration h4 {
+  line-height: 52px;
 }
 
 .project-container {
@@ -1048,21 +1055,24 @@ header h2 {
     max-width: 60%;
   }
 
-  .self-love,
+  .refrigeration,
+.self-love,
 .js-quiz,
 .planted,
 .tasty {
     max-width: 100%;
     margin: 100px auto;
   }
-  .self-love h4,
+  .refrigeration h4,
+.self-love h4,
 .js-quiz h4,
 .planted h4,
 .tasty h4 {
     width: 80%;
     margin: 0;
   }
-  .self-love .image-container,
+  .refrigeration .image-container,
+.self-love .image-container,
 .js-quiz .image-container,
 .planted .image-container,
 .tasty .image-container {
