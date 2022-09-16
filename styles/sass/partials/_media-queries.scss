@@ -30,6 +30,11 @@
 		padding-top: 80px;
 	}
 
+	video {
+		top: 7px;
+		height: 94%;
+	}
+
 	input,
 	textarea {
 		width: 60%;
@@ -97,6 +102,8 @@
 		}
 	}
 
+	.cope,
+	.refrigeration,
 	.self-love,
 	.js-quiz,
 	.planted,
@@ -118,12 +125,14 @@
 		flex-direction: column;
 	}
 
+	.refrigeration,
 	.js-quiz {
 		.project-container {
 			margin-top: -25px;
 		}
 	}
 
+	.cope,
 	.self-love,
 	.planted {
 		p {
@@ -133,6 +142,10 @@
 
 	.project-info {
 		padding: 0;
+	}
+
+	video {
+		top: 8.5px;
 	}
 
 	.contact {
@@ -203,6 +216,7 @@
 		}
 	}
 
+	.cope,
 	.refrigeration,
 	.self-love,
 	.js-quiz,
@@ -218,6 +232,10 @@
 		.image-container {
 			width: 75%;
 		}
+	}
+
+	video {
+		top: 6px;
 	}
 
 	.contact {

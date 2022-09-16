@@ -2,6 +2,7 @@
 	padding: 120px 0 80px;
 }
 
+.cope,
 .refrigeration,
 .self-love,
 .js-quiz,
@@ -56,10 +57,28 @@
 	}
 }
 
+.cope,
 .planted,
 .self-love {
 	margin-right: 0;
 	margin-left: auto;
+}
+
+.cope {
+	.image-container {
+		max-width: 20%;
+		position: relative;
+		padding-right: -5px;
+		overflow-x: clip;
+	}
+}
+
+video {
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 10px;
+	height: 93.9%;
 }
 
 .project-info {

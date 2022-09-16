@@ -642,6 +642,7 @@ header img:hover {
   padding: 120px 0 80px;
 }
 
+.cope,
 .refrigeration,
 .self-love,
 .js-quiz,
@@ -651,6 +652,7 @@ header img:hover {
   margin: 100px 0;
   margin-right: auto;
 }
+.cope .image-container,
 .refrigeration .image-container,
 .self-love .image-container,
 .js-quiz .image-container,
@@ -659,6 +661,7 @@ header img:hover {
   width: 70%;
   margin: 0 auto;
 }
+.cope h4,
 .refrigeration h4,
 .self-love h4,
 .js-quiz h4,
@@ -711,10 +714,26 @@ header img:hover {
       align-self: flex-start;
 }
 
+.cope,
 .planted,
 .self-love {
   margin-right: 0;
   margin-left: auto;
+}
+
+.cope .image-container {
+  max-width: 20%;
+  position: relative;
+  padding-right: -5px;
+  overflow-x: clip;
+}
+
+video {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  height: 93.9%;
 }
 
 .project-info {
@@ -855,21 +874,17 @@ textarea {
   header {
     height: 80vh;
   }
-
   h1 {
     font-size: 70px;
     font-size: 3.5rem;
   }
-
   h2 {
     font-size: 40px;
     font-size: 2rem;
   }
-
   .about {
     padding: 80px 0;
   }
-
   .skills {
     padding: 80px 0;
   }
@@ -878,11 +893,13 @@ textarea {
     font-size: 60px;
     font-size: 3rem;
   }
-
   .projects {
     padding-top: 80px;
   }
-
+  video {
+    top: 7px;
+    height: 94%;
+  }
   input,
 textarea {
     width: 60%;
@@ -892,11 +909,9 @@ textarea {
   html {
     font-size: 113%;
   }
-
   .wrapper {
     width: 90%;
   }
-
   header {
     height: auto;
   }
@@ -920,7 +935,6 @@ header h2 {
     max-width: 50%;
     margin: 60px auto;
   }
-
   .about {
     padding: 40px 0;
     margin: 0 auto;
@@ -931,14 +945,12 @@ header h2 {
     margin: 0 auto;
     max-width: 100%;
   }
-
   .skills {
     text-align: center;
   }
   .skills ul li {
     width: 100px;
   }
-
   .projects {
     padding: 0;
     text-align: center;
@@ -946,53 +958,57 @@ header h2 {
   .projects h4 {
     margin-top: 20px;
   }
-
-  .self-love,
+  .cope,
+.refrigeration,
+.self-love,
 .js-quiz,
 .planted,
 .tasty {
     max-width: 100%;
     margin: 100px auto;
   }
-  .self-love h4,
+  .cope h4,
+.refrigeration h4,
+.self-love h4,
 .js-quiz h4,
 .planted h4,
 .tasty h4 {
     width: 80%;
     margin: 0;
   }
-  .self-love .image-container,
+  .cope .image-container,
+.refrigeration .image-container,
+.self-love .image-container,
 .js-quiz .image-container,
 .planted .image-container,
 .tasty .image-container {
     width: 60%;
     margin: 0 auto;
   }
-
   .project-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
-  .js-quiz .project-container {
+  .refrigeration .project-container,
+.js-quiz .project-container {
     margin-top: -25px;
   }
-
-  .self-love p,
+  .cope p,
+.self-love p,
 .planted p {
     text-align: center;
   }
-
   .project-info {
     padding: 0;
   }
-
+  video {
+    top: 8.5px;
+  }
   .contact h3 {
     margin: 60px auto 0;
   }
-
   .contact-icons {
     margin: 10px auto;
   }
@@ -1009,11 +1025,9 @@ header h2 {
     -webkit-transition: 0.6s;
     transition: 0.6s;
   }
-
   .nav-toggle {
     display: inline-block;
   }
-
   .menu-ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1039,7 +1053,6 @@ header h2 {
     background-image: none;
     border: 2px solid white;
   }
-
   header {
     padding-top: 80px;
   }
@@ -1054,8 +1067,8 @@ header h2 {
   header .image-container {
     max-width: 60%;
   }
-
-  .refrigeration,
+  .cope,
+.refrigeration,
 .self-love,
 .js-quiz,
 .planted,
@@ -1063,7 +1076,8 @@ header h2 {
     max-width: 100%;
     margin: 100px auto;
   }
-  .refrigeration h4,
+  .cope h4,
+.refrigeration h4,
 .self-love h4,
 .js-quiz h4,
 .planted h4,
@@ -1071,24 +1085,25 @@ header h2 {
     width: 80%;
     margin: 0;
   }
-  .refrigeration .image-container,
+  .cope .image-container,
+.refrigeration .image-container,
 .self-love .image-container,
 .js-quiz .image-container,
 .planted .image-container,
 .tasty .image-container {
     width: 75%;
   }
-
+  video {
+    top: 6px;
+  }
   .contact h3 {
     font-size: 50px;
     font-size: 2.5rem;
   }
-
   input,
 textarea {
     width: 90%;
   }
-
   .thank-you-page h1 {
     font-size: 30px;
     font-size: 1.5rem;
