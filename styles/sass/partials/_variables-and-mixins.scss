@@ -9,9 +9,15 @@
 	src: url("../assets/typography/made-bon-voyage-regular.woff") format("woff");
 }
 
+@font-face {
+	font-family: "Migra Extrabold";
+	src: url("../assets/typography/Migra-Extrabold.woff2") format("woff2");
+}
+
 // typography variables
 $heading-font: "Thin Made Bon Voyage", serif;
 $text-font: "Open Sans", sans-serif;
+// $logo-font: "Migra Extrabold", serif;
 
 // color variables
 $purple: #bd5ec2;

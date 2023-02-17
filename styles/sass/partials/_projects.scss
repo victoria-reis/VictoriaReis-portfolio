@@ -1,95 +1,95 @@
-.projects {
-	padding: 120px 0 80px;
-}
+// .projects {
+// 	padding: 120px 0 80px;
+// }
 
-.cope,
-.refrigeration,
-.self-love,
-.js-quiz,
-.planted,
-.tasty {
-	max-width: 70%;
-	margin: 100px 0;
-	margin-right: auto;
+// .cope,
+// .refrigeration,
+// .self-love,
+// .js-quiz,
+// .planted,
+// .tasty {
+// 	max-width: 70%;
+// 	margin: 100px 0;
+// 	margin-right: auto;
 
-	.image-container {
-		width: 70%;
-		margin: 0 auto;
-	}
+// 	.image-container {
+// 		width: 70%;
+// 		margin: 0 auto;
+// 	}
 
-	h4 {
-		text-align: center;
-		width: 50%;
-		margin: 0;
-	}
-}
+// 	h4 {
+// 		text-align: center;
+// 		width: 50%;
+// 		margin: 0;
+// 	}
+// }
 
-.refrigeration {
-	h4 {
-		line-height: 52px;
-	}
-}
+// .refrigeration {
+// 	h4 {
+// 		line-height: 52px;
+// 	}
+// }
 
-.project-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
+// .project-container {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	flex-direction: column;
+// 	align-items: center;
 
-	p {
-		margin: 10px auto;
-		text-align: center;
-	}
+// 	p {
+// 		margin: 10px auto;
+// 		text-align: center;
+// 	}
 
-	.project-tools {
-		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+// 	.project-tools {
+// 		margin: 0 auto;
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		justify-content: center;
 
-		p {
-			margin: 2px 10px;
-			padding: 5px 15px;
-			background-color: rgba(255, 255, 255, 0.3);
-			border-radius: 50px;
-			align-self: flex-start;
-		}
-	}
-}
+// 		p {
+// 			margin: 2px 10px;
+// 			padding: 5px 15px;
+// 			background-color: rgba(255, 255, 255, 0.3);
+// 			border-radius: 50px;
+// 			align-self: flex-start;
+// 		}
+// 	}
+// }
 
-.cope,
-.planted,
-.self-love {
-	margin-right: 0;
-	margin-left: auto;
-}
+// .cope,
+// .planted,
+// .self-love {
+// 	margin-right: 0;
+// 	margin-left: auto;
+// }
 
-.cope {
-	.image-container {
-		max-width: 20%;
-		position: relative;
-		padding-right: -5px;
-		overflow-x: clip;
-	}
-}
+// .cope {
+// 	.image-container {
+// 		max-width: 20%;
+// 		position: relative;
+// 		padding-right: -5px;
+// 		overflow-x: clip;
+// 	}
+// }
 
-video {
-	display: block;
-	position: absolute;
-	z-index: -1;
-	top: 10px;
-	height: 93.9%;
-}
+// video {
+// 	display: block;
+// 	position: absolute;
+// 	z-index: -1;
+// 	top: 10px;
+// 	height: 93.9%;
+// }
 
-.project-info {
-	width: fit-content;
-	a {
-		padding: 5px 10px;
-		transition: 0.5s;
-		&:hover,
-		&:focus {
-			@include gradient-background;
-			color: white;
-		}
-	}
-}
+// .project-info {
+// 	width: fit-content;
+// 	a {
+// 		padding: 5px 10px;
+// 		transition: 0.5s;
+// 		&:hover,
+// 		&:focus {
+// 			@include gradient-background;
+// 			color: white;
+// 		}
+// 	}
+// }
