@@ -1,12 +1,130 @@
 @font-face {
-  font-family: "Thin Made Bon Voyage";
-  src: url("../assets/typography/made-bon-voyage-thin.woff") format("woff");
-}
-@font-face {
-  font-family: "Regular Made Bon Voyage";
-  src: url("../assets/typography/made-bon-voyage-regular.woff") format("woff");
-}
-@font-face {
   font-family: "Migra Extrabold";
   src: url("../assets/typography/Migra-Extrabold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Migra Extralight";
+  src: url("../assets/typography/Migra-Extralight.woff2") format("woff2");
+}
+html {
+  font-size: 125%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 1400px;
+  border: 1px solid white;
+}
+
+img {
+  display: block;
+}
+
+p {
+  margin: 0;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  list-style: none;
+}
+
+.logo {
+  font-size: 50px;
+  font-size: 2.5rem;
+  font-family: "Migra Extrabold", serif;
+  color: white;
+  padding-right: 23px;
+  position: relative;
+}
+.logo span {
+  position: absolute;
+  top: 12px;
+  left: 21px;
+}
+
+nav {
+  font-size: 24px;
+  font-size: 1.2rem;
+  font-family: "Migra Extrabold", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.home {
+  background-image: url("../assets/images/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: calc(100% - 63px);
+  border: 1px solid yellow;
+}
+
+.image-container {
+  width: 40%;
+  position: relative;
+}
+.image-container::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.image-container img {
+  border-radius: 40%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }

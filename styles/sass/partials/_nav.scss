@@ -76,3 +76,31 @@
 // 	-webkit-transform-origin: 15% 95%;
 // 	transform-origin: 15% 95%;
 // }
+
+.logo {
+	@include logo-font;
+	color: white;
+	padding-right: 23px;
+	// border: 1px solid red;
+	position: relative;
+	span {
+		position: absolute;
+		top: 12px;
+		left: 21px;
+	}
+}
+
+nav {
+	@include nav-font;
+	display: flex;
+	border: 1px solid red;
+
+	ul {
+		display: flex;
+		align-items: center;
+		color: white;
+		// border: 1px solid blue;
+		gap: 50px;
+		margin: 0 auto;
+	}
+}
