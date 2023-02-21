@@ -92,7 +92,6 @@
 
 nav {
 	@include nav-font;
-	display: flex;
 	border: 1px solid red;
 
 	ul {
@@ -103,4 +102,40 @@ nav {
 		gap: 50px;
 		margin: 0 auto;
 	}
+
+	.wrapper {
+		display: flex;
+	}
 }
+
+// .on-scroll {
+// 	background-color: white;
+
+// 	// .wrapper {
+// 	// }
+
+// 	ul {
+// 		background-image: url("../assets/images/home.png");
+// 		background-repeat: no-repeat;
+// 		background-size: cover;
+// 		background-position-x: center;
+// 		// background-color: white;
+// 		color: transparent;
+// 		-webkit-background-clip: text;
+// 		background-clip: text;
+// 		// mix-blend-mode: screen;
+// 	}
+
+// 	.logo,
+// 	span {
+// 		background-image: url("../assets/images/home.png");
+// 		background-repeat: no-repeat;
+// 		background-size: cover;
+// 		background-position-x: center;
+// 		// background-color: white;
+// 		color: transparent;
+// 		-webkit-background-clip: text;
+// 		background-clip: text;
+// 		// mix-blend-mode: screen;
+// 	}
+// }

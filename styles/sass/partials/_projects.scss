@@ -93,3 +93,15 @@
 // 		}
 // 	}
 // }
+
+.projects {
+	min-height: 100vh;
+	background-image: url("../assets/images/projects.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+
+	.wrapper {
+		padding-top: 30px;
+	}
+}

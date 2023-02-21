@@ -1,8 +1,8 @@
 html {
 	font-size: 125%;
-	// font-family: $text-font;
+	font-family: $body-font;
 	// color: black;
-	// scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -18,48 +18,49 @@ body {
 
 .wrapper {
 	margin: 0 auto;
-	width: 90%;
-	height: 100%;
+	width: 80%;
+	// height: 100%;
 	max-width: 1400px;
-	border: 1px solid white;
+	// border: 1px solid white;
 }
 
 img {
 	display: block;
 }
 
-// .fa-solid,
-// .fa-brands,
-// .fa-regular {
-// 	font-family: fontAwesome;
-// 	font-style: normal;
-// 	display: inline-block;
-// 	background-color: $pink;
-// 	@include gradient-background;
-// 	-webkit-background-clip: text;
-// 	background-clip: text;
-// 	color: transparent;
-// 	transition: 0.8s;
-// 	&:hover,
-// 	&:focus {
-// 		color: $purple;
-// 	}
-// }
+.fa-solid,
+.fa-brands,
+.fa-regular {
+	font-family: fontAwesome;
+	font-style: normal;
+	display: block;
+	// display: inline-block;
+	// background-color: $pink;
+	// @include gradient-background;
+	// -webkit-background-clip: text;
+	// background-clip: text;
+	// color: transparent;
+	// transition: 0.8s;
+	// &:hover,
+	// &:focus {
+	// 	color: $purple;
+	// }
+}
 
-// .material-icons-outlined {
-// 	font-family: "Material Icons";
-// 	display: block;
-// 	background-color: $pink;
-// 	@include gradient-background;
-// 	-webkit-background-clip: text;
-// 	background-clip: text;
-// 	color: transparent;
-// 	transition: 0.8s;
-// 	&:hover,
-// 	&:focus {
-// 		color: $purple;
-// 	}
-// }
+.material-icons-outlined {
+	font-family: "Material Icons";
+	display: block;
+	// background-color: $pink;
+	// @include gradient-background;
+	// -webkit-background-clip: text;
+	// background-clip: text;
+	// color: transparent;
+	// transition: 0.8s;
+	// &:hover,
+	// &:focus {
+	// 	color: $purple;
+	// }
+}
 
 // .fa-chevron-up,
 // .fa-chevron-down {
@@ -105,9 +106,11 @@ ul {
 // 	@include h2-font;
 // }
 
-// h3 {
-// 	@include h3-font;
-// }
+h3 {
+	@include h3-font;
+	// margin: 30px 0;
+	margin-top: 0;
+}
 
 // h4 {
 // 	@include h4-font;

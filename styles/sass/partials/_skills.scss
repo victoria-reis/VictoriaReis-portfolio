@@ -46,3 +46,97 @@
 // 		}
 // 	}
 // }
+
+.skills {
+	background-image: url("../assets/images/skills.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: right;
+	height: 40vh;
+
+	.wrapper {
+		padding-top: 30px;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	li {
+		// border: 1px solid white;
+		width: 125px;
+		height: 125px;
+		border-radius: 50%;
+		// margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: white;
+		mix-blend-mode: screen;
+
+		// color: transparent;
+		// -webkit-background-clip: text;
+		// background-clip: text;
+
+		&:hover p {
+			visibility: visible;
+		}
+
+		&:hover i {
+			visibility: hidden;
+		}
+
+		&:hover span {
+			visibility: hidden;
+		}
+
+		p {
+			position: absolute;
+			display: block;
+			max-width: 110px;
+			visibility: hidden;
+		}
+	}
+
+	i,
+	span {
+		@include font-size(50);
+	}
+}
+
+// .html,
+// .css,
+// .js,
+// .redux,
+// .git,
+// .github {
+// 	p {
+// 		margin-top: 7px;
+// 	}
+// }
+
+// .firebase,
+// .accessibility {
+// 	p {
+// 		margin-top: 3px;
+// 	}
+// }
+
+// .accessibility,
+// .react {
+// 	p {
+// 		@include font-size(18);
+// 	}
+// }
+
+// .responsive-design {
+// 	p {
+// 		margin-top: -7px;
+// 	}
+// }

@@ -24,6 +24,7 @@
 // $text-font: "Open Sans", sans-serif;
 $logo-font: "Migra Extrabold", serif;
 $home-font: "Migra Extralight", serif;
+$body-font: "Open Sans", sans-serif;
 
 // color variables
 $purple: #bd5ec2;
@@ -35,7 +36,7 @@ $yellow: #ffc744;
 // typography mixins
 @mixin font-size($sizeValue) {
 	font-size: $sizeValue * 1px;
-	font-size: ($sizeValue/20) * 1rem;
+	font-size: calc($sizeValue / 20) * 1rem;
 }
 
 @mixin logo-font {
@@ -58,10 +59,10 @@ $yellow: #ffc744;
 // 	font-family: $home-font;
 // }
 
-// @mixin h3-font {
-// 	@include font-size(60);
-// 	font-family: $heading-font;
-// }
+@mixin h3-font {
+	@include font-size(50);
+	font-family: $logo-font;
+}
 
 // @mixin h4-font {
 // 	@include font-size(40);

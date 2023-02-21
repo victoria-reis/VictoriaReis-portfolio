@@ -63,3 +63,15 @@
 // textarea {
 // 	height: 200px;
 // }
+
+.contact {
+	height: 50vh;
+	background-image: url("../assets/images/contact.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+
+	.wrapper {
+		padding-top: 30px;
+	}
+}

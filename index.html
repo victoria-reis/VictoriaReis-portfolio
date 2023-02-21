@@ -5,24 +5,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Victoria Reis Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/a0e4c21e13.js"
+			crossorigin="anonymous"
+		></script>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
 		<div id="home" class="home">
-			<!-- WRAPPER STARTS -->
-			<div class="wrapper">
-				<!-- NAV STARTS -->
-				<nav>
+			<!-- NAV STARTS -->
+			<nav class="on-scroll">
+				<!-- WRAPPER STARTS -->
+				<div class="wrapper">
 					<p class="logo">
 						<a href="#home">V<span>R</span></a>
 					</p>
@@ -33,128 +38,137 @@
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
-				</nav>
-				<!-- NAV ENDS -->
+				</div>
+				<!-- WRAPPER ENDS -->
+			</nav>
+			<!-- NAV ENDS -->
 
-				<!-- HEADER STARTS -->
-				<header>
-					<div>
-						<h1>Hi there, <span>I'm Victoria Reis</span></h1>
-						<h2>Frontend Web Developer</h2>
-					</div>
-					<div class="image-container">
-						<img
-							src="./assets/images/portrait-1.jpg"
-							alt="portrait of Victoria Reis"
-						/>
-					</div>
-				</header>
-				<!-- HEADER ENDS -->
-			</div>
-			<!-- WRAPPER ENDS -->
-		</div>
+			<!-- HEADER STARTS -->
+			<header class="wrapper">
+				<div>
+					<h1>Hi there, <span>I'm Victoria Reis</span></h1>
+					<h2>Frontend Web Developer</h2>
+				</div>
+			</header>
+			<!-- HEADER ENDS -->
 
 		<!-- MAIN STARTS -->
 		<main>
 			<!-- ABOUT SECTION STARTS -->
-			<section id="about">
-				<h2>About Me</h2>
-				<p>
-					I'm Victoria, my pronouns are she/her. I'm a Front-End Web Developer
-					based in Toronto, ON with 5+ years of experience in Hospitality and
-					Retail. With my attention to detail, communication and creativity I
-					bring responsive, clean and accessible applications ideas to life. I'm
-					looking for opportunities to learn new languages and frameworks,
-					improve my skills, and give back to the tech community.
-				</p>
-				<p>
-					When I'm not coding you can find me taking care of my plant children,
-					hanging out with friends or making some kind of dessert.
-				</p>
+			<section id="about" class="about">
+				<!-- WRAPPER STARTS -->
+				<div class="wrapper">
+					<h3>About Me</h3>
+					<!-- ABOUT CONTENT STARTS -->
+					<div class="about-content">
+						<div class="image-container">
+						<img
+								src="./assets/images/portrait-1.jpg"
+								alt="portrait of Victoria Reis"
+							/>
+						</div>
+						<p>
+						I'm Victoria, my pronouns are she/her. I'm a Front-End Web Developer
+						based in Toronto, ON with 5+ years of experience in Hospitality and
+						Retail. With my attention to detail, communication and creativity I
+						bring responsive, clean and accessible applications ideas to life. I'm
+						looking for opportunities to learn new languages and frameworks,
+						improve my skills, and give back to the tech community.
+						<br><br/>
+						When I'm not coding you can find me taking care of my plant children, hanging out with friends or making some kind of dessert.						
+						</p>
+					</div>
+				<!-- ABOUT CONTENT ENDS -->
+				</div>
+				<!-- WRAPPER ENDS -->
 			</section>
 			<!-- ABOUT SECTION ENDS -->
 
 			<!-- SKILLS SECTION STARTS -->
-			<section id="skills">
-				<h2>Skills</h2>
-
+			<section id="skills" class="skills">
+				<!-- WRAPPER STARTS -->
+				<div class="wrapper">
+				<h3>Skills</h3>
 				<!-- UL STARTS -->
 				<ul>
-					<li>
+					<li class="html">
 						<i class="devicon-html5-plain" aria-hidden="true"></i>
 						<p>HTML5</p>
 					</li>
-					<li>
+					<li class="css">
 						<i class="devicon-css3-plain" aria-hidden="true"></i>
 						<p>CSS</p>
 					</li>
-					<li>
+					<li class="sass">
 						<i class="devicon-sass-original" aria-hidden="true"></i>
 						<p>Sass</p>
 					</li>
-					<li>
+					<li class="tailwind">
 						<i class="devicon-tailwindcss-plain" aria-hidden="true"></i>
 						<p>Tailwind</p>
 					</li>
-					<li>
+					<li class="js">
 						<i class="devicon-javascript-plain" aria-hidden="true"></i>
 						<p>JavaScript</p>
 					</li>
-					<li>
+					<li class="react">
 						<i class="devicon-react-original" aria-hidden="true"></i>
 						<p>React and React Native</p>
 					</li>
-					<li>
+					<li class="redux">
 						<i class="devicon-redux-original" aria-hidden="true"></i>
 						<p>Redux</p>
 					</li>
-					<li>
+					<li class="git">
 						<i class="devicon-git-plain" aria-hidden="true"></i>
 						<p>Git</p>
 					</li>
-					<li>
+					<li class="github">
 						<i class="devicon-github-original" aria-hidden="true"></i>
 						<p>GitHub</p>
 					</li>
-					<li>
+					<li class="firebase">
 						<i class="devicon-firebase-plain" aria-hidden="true"></i>
 						<p>Firebase</p>
 					</li>
-					<li>
+					<li class="responsive-design">
 						<span class="material-icons-outlined" aria-hidden="true">
 							devices
 						</span>
 						<p>Responsive Design</p>
 					</li>
-					<li>
+					<li class="accessibility">
 						<i class="fa-regular fa-universal-access" aria-hidden="true"></i>
 						<p>Accessibility</p>
 					</li>
 				</ul>
 				<!-- UL ENDS -->
+				</div>
+				<!-- WRAPPER ENDS -->
 			</section>
 			<!-- SKILLS SECTION ENDS -->
 
 			<!-- PROJECTS SECTION STARTS -->
-			<section id="projects">
-				<h2>Projects</h2>
-
+			<section id="projects" class="projects">
+				<!-- WRAPPER STARTS -->
+				<div class="wrapper">
+				<h3>Projects</h3>
 				<!-- UL STARTS -->
 				<ul>
 					<li>
-						<h3>Fashion4U</h3>
+						<h4>Fashion4U</h4>
 						<p>Responsive clothing e-commerce.</p>
 						<a href="https://fashion4u.netlify.app/">Live</a>
 						<a href="https://github.com/victoria-reis/e-commerce">Repo</a>
 					</li>
 					<li>
-						<h3>Baby How you Feeling?</h3>
+						<h4>Baby How you Feeling?</h4>
 						<p>Responsive React application inspired by the singer Lizzo.</p>
 						<a href="https://babyhowyoufeeling.netlify.app/">Live</a>
 						<a href="https://github.com/victoria-reis/lizzo-app">Repo</a>
 					</li>
 					<li>
-						<h3>Cope</h3>
+						<h4>Cope</h4>
 						<p>
 							Mobile application that helps users reduce their anxiety levels
 							created during Co.Lab (apprenticeship).
@@ -163,7 +177,7 @@
 						<a href="https://github.com/victoria-reis/cope-app">Repo</a>
 					</li>
 					<li>
-						<h3>Self-Love Reminder</h3>
+						<h4>Self-Love Reminder</h4>
 						<p>
 							Responsive React application created to remind you to give
 							yourself some love.
@@ -172,7 +186,7 @@
 						<a href="https://github.com/victoria-reis/self-love-app">Repo</a>
 					</li>
 					<li>
-						<h3>Tech-Tacular Test</h3>
+						<h4>Tech-Tacular Test</h4>
 						<p>JavaScript knowledge quiz application.</p>
 						<a href="https://techtaculartest.netlify.app/">Live</a>
 						<a href="https://github.com/victoria-reis/js-quiz-new-design"
@@ -181,13 +195,16 @@
 					</li>
 				</ul>
 				<!-- UL ENDS -->
+				</div>
+				<!-- WRAPPER ENDS -->
 			</section>
 			<!-- PROJECTS SECTION ENDS -->
 
 			<!-- CONTACT SECTION STARTS -->
-			<section id="contact">
-				<h2>Contact Me</h2>
-
+			<section id="contact" class="contact">
+				<!-- WRAPPER STARTS -->
+				<div class="wrapper">
+				<h3>Contact Me</h3>
 				<!-- FORM STARTS -->
 				<form
 					method="POST"
@@ -245,6 +262,8 @@
 						><i class="fa-solid fa-envelope" aria-hidden="true"></i
 					></a>
 				</div>
+				</div>
+				<!-- WRAPPER ENDS -->
 			</section>
 			<!-- CONTACT SECTION ENDS -->
 		</main>
