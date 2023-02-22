@@ -642,6 +642,8 @@ header img:hover {
   padding: 120px 0 80px;
 }
 
+.e-commerce,
+.lizzo-app,
 .cope,
 .refrigeration,
 .self-love,
@@ -652,6 +654,8 @@ header img:hover {
   margin: 100px 0;
   margin-right: auto;
 }
+.e-commerce .image-container,
+.lizzo-app .image-container,
 .cope .image-container,
 .refrigeration .image-container,
 .self-love .image-container,
@@ -661,6 +665,8 @@ header img:hover {
   width: 70%;
   margin: 0 auto;
 }
+.e-commerce h4,
+.lizzo-app h4,
 .cope h4,
 .refrigeration h4,
 .self-love h4,
@@ -714,6 +720,7 @@ header img:hover {
       align-self: flex-start;
 }
 
+.e-commerce,
 .cope,
 .planted,
 .self-love {
@@ -889,7 +896,7 @@ textarea {
     padding: 80px 0;
   }
   .skills ul li i,
-.skills ul li span {
+  .skills ul li span {
     font-size: 60px;
     font-size: 3rem;
   }
@@ -901,7 +908,7 @@ textarea {
     height: 94%;
   }
   input,
-textarea {
+  textarea {
     width: 60%;
   }
 }
@@ -928,7 +935,7 @@ textarea {
     text-align: center;
   }
   header h1,
-header h2 {
+  header h2 {
     margin: 0 auto;
   }
   header .image-container {
@@ -958,30 +965,36 @@ header h2 {
   .projects h4 {
     margin-top: 20px;
   }
+  .e-commerce,
+  .lizzo-app,
   .cope,
-.refrigeration,
-.self-love,
-.js-quiz,
-.planted,
-.tasty {
+  .refrigeration,
+  .self-love,
+  .js-quiz,
+  .planted,
+  .tasty {
     max-width: 100%;
     margin: 100px auto;
   }
+  .e-commerce h4,
+  .lizzo-app h4,
   .cope h4,
-.refrigeration h4,
-.self-love h4,
-.js-quiz h4,
-.planted h4,
-.tasty h4 {
+  .refrigeration h4,
+  .self-love h4,
+  .js-quiz h4,
+  .planted h4,
+  .tasty h4 {
     width: 80%;
     margin: 0;
   }
+  .e-commerce .image-container,
+  .lizzo-app .image-container,
   .cope .image-container,
-.refrigeration .image-container,
-.self-love .image-container,
-.js-quiz .image-container,
-.planted .image-container,
-.tasty .image-container {
+  .refrigeration .image-container,
+  .self-love .image-container,
+  .js-quiz .image-container,
+  .planted .image-container,
+  .tasty .image-container {
     width: 60%;
     margin: 0 auto;
   }
@@ -992,12 +1005,13 @@ header h2 {
             flex-direction: column;
   }
   .refrigeration .project-container,
-.js-quiz .project-container {
+  .js-quiz .project-container {
     margin-top: -25px;
   }
+  .e-commerce p,
   .cope p,
-.self-love p,
-.planted p {
+  .self-love p,
+  .planted p {
     text-align: center;
   }
   .project-info {
@@ -1067,30 +1081,36 @@ header h2 {
   header .image-container {
     max-width: 60%;
   }
+  .e-commerce,
+  .lizzo-app,
   .cope,
-.refrigeration,
-.self-love,
-.js-quiz,
-.planted,
-.tasty {
+  .refrigeration,
+  .self-love,
+  .js-quiz,
+  .planted,
+  .tasty {
     max-width: 100%;
     margin: 100px auto;
   }
+  .e-commerce h4,
+  .lizzo-app h4,
   .cope h4,
-.refrigeration h4,
-.self-love h4,
-.js-quiz h4,
-.planted h4,
-.tasty h4 {
+  .refrigeration h4,
+  .self-love h4,
+  .js-quiz h4,
+  .planted h4,
+  .tasty h4 {
     width: 80%;
     margin: 0;
   }
+  .e-commerce .image-container,
+  .lizzo-app .image-container,
   .cope .image-container,
-.refrigeration .image-container,
-.self-love .image-container,
-.js-quiz .image-container,
-.planted .image-container,
-.tasty .image-container {
+  .refrigeration .image-container,
+  .self-love .image-container,
+  .js-quiz .image-container,
+  .planted .image-container,
+  .tasty .image-container {
     width: 75%;
   }
   video {
@@ -1101,7 +1121,7 @@ header h2 {
     font-size: 2.5rem;
   }
   input,
-textarea {
+  textarea {
     width: 90%;
   }
   .thank-you-page h1 {
