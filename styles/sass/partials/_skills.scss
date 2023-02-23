@@ -56,7 +56,7 @@
 	height: 40vh;
 
 	.wrapper {
-		padding-top: 30px;
+		padding-top: 70px;
 	}
 
 	ul {
@@ -77,8 +77,9 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		background-color: white;
+		background-color: rgba(255, 255, 255, 0.8);
 		mix-blend-mode: screen;
+		transition: 0.5s;
 
 		// color: transparent;
 		// -webkit-background-clip: text;

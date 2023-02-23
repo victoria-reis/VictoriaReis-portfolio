@@ -64,10 +64,10 @@ $yellow: #ffc744;
 	font-family: $logo-font;
 }
 
-// @mixin h4-font {
-// 	@include font-size(40);
-// 	font-family: "Regular Made Bon Voyage";
-// }
+@mixin h4-font {
+	@include font-size(30);
+	font-family: $logo-font;
+}
 
 // other mixins
 @mixin gradient-background {

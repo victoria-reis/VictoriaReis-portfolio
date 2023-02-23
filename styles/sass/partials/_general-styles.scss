@@ -26,6 +26,7 @@ body {
 
 img {
 	display: block;
+	max-width: 100%;
 }
 
 .fa-solid,
@@ -98,6 +99,10 @@ ul {
 	}
 }
 
+button {
+	border: none;
+}
+
 // h1 {
 // 	@include h1-font;
 // }
@@ -112,33 +117,36 @@ h3 {
 	margin-top: 0;
 }
 
-// h4 {
-// 	@include h4-font;
-// }
+h4 {
+	@include h4-font;
+	margin: 0;
+	// border: 1px solid blue;
+}
 
-// footer {
-// 	p {
-// 		text-align: center;
-// 		margin: 40px 0 10px;
-// 	}
-// }
+footer {
+	p {
+		margin: 3px auto;
+		font-family: "Migra Extralight", serif;
+		// margin: 40px 0 10px;
+	}
+}
 
-// .reveal {
-// 	position: relative;
-// 	opacity: 0;
-// 	transition: all 2s ease;
-// }
+.reveal {
+	position: relative;
+	opacity: 0;
+	transition: all 2s ease;
+}
 
-// .reveal.active {
-// 	opacity: 1;
-// }
+.reveal.active {
+	opacity: 1;
+}
 
-// // arrow scroll animation
-// @keyframes arrow {
-// 	50% {
-// 		transform: translateY(-10px);
-// 	}
-// 	100% {
-// 		transform: translateY(0px);
-// 	}
-// }
+// arrow scroll animation
+@keyframes arrow {
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

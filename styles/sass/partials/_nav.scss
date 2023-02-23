@@ -81,6 +81,7 @@
 	@include logo-font;
 	color: white;
 	padding-right: 23px;
+	margin-bottom: 6px;
 	// border: 1px solid red;
 	position: relative;
 	span {
@@ -92,7 +93,12 @@
 
 nav {
 	@include nav-font;
-	border: 1px solid red;
+	// border: 1px solid red;
+	transition: 0.3s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 20;
 
 	ul {
 		display: flex;
@@ -108,34 +114,34 @@ nav {
 	}
 }
 
-// .on-scroll {
-// 	background-color: white;
+.on-scroll {
+	background-color: white;
 
-// 	// .wrapper {
-// 	// }
+	// .wrapper {
+	// }
 
-// 	ul {
-// 		background-image: url("../assets/images/home.png");
-// 		background-repeat: no-repeat;
-// 		background-size: cover;
-// 		background-position-x: center;
-// 		// background-color: white;
-// 		color: transparent;
-// 		-webkit-background-clip: text;
-// 		background-clip: text;
-// 		// mix-blend-mode: screen;
-// 	}
+	ul {
+		background-image: url("../assets/images/home.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-x: center;
+		// background-color: white;
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		// mix-blend-mode: screen;
+	}
 
-// 	.logo,
-// 	span {
-// 		background-image: url("../assets/images/home.png");
-// 		background-repeat: no-repeat;
-// 		background-size: cover;
-// 		background-position-x: center;
-// 		// background-color: white;
-// 		color: transparent;
-// 		-webkit-background-clip: text;
-// 		background-clip: text;
-// 		// mix-blend-mode: screen;
-// 	}
-// }
+	.logo,
+	span {
+		background-image: url("../assets/images/home.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-x: center;
+		// background-color: white;
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		// mix-blend-mode: screen;
+	}
+}

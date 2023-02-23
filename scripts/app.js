@@ -1,8 +1,14 @@
 const init = () => {
-	// scroll animation
+	// scroll animation and nav style change
 	window.addEventListener("scroll", () => {
 		const reveals = document.querySelectorAll(".reveal");
+		const nav = document.getElementById("nav");
 
+		if (window.pageYOffset > 60) {
+			nav.classList.add("on-scroll");
+		} else if (window.pageYOffset < 60) {
+			nav.classList.remove("on-scroll");
+		}
 		for (let i = 0; i < reveals.length; i++) {
 			const windowHeight = window.innerHeight;
 			const revealTop = reveals[i].getBoundingClientRect().top;
@@ -29,17 +35,17 @@ const init = () => {
 	});
 
 	// mobile menu button open/close
-	const mobileMenuIcon = document.querySelector(".nav-toggle");
-	mobileMenuIcon.addEventListener("click", () => {
-		mobileMenuIcon.classList.toggle("opened");
-		if (mobileMenuIcon.classList[1] === "opened") {
-			document.querySelector(".navigation .wrapper").style.right = "0";
-			mobileMenuIcon.style.backgroundColor = "transparent";
-		} else {
-			document.querySelector(".navigation .wrapper").style.right = "-100vw";
-			mobileMenuIcon.style.backgroundColor = "rgba(189, 94, 194, 0.7)";
-		}
-	});
+	// const mobileMenuIcon = document.querySelector(".nav-toggle");
+	// mobileMenuIcon.addEventListener("click", () => {
+	// 	mobileMenuIcon.classList.toggle("opened");
+	// 	if (mobileMenuIcon.classList[1] === "opened") {
+	// 		document.querySelector(".navigation .wrapper").style.right = "0";
+	// 		mobileMenuIcon.style.backgroundColor = "transparent";
+	// 	} else {
+	// 		document.querySelector(".navigation .wrapper").style.right = "-100vw";
+	// 		mobileMenuIcon.style.backgroundColor = "rgba(189, 94, 194, 0.7)";
+	// 	}
+	// });
 };
 
 init();

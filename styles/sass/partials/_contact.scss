@@ -65,7 +65,7 @@
 // }
 
 .contact {
-	height: 50vh;
+	height: 40vh;
 	background-image: url("../assets/images/contact.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,4 +74,111 @@
 	.wrapper {
 		padding-top: 30px;
 	}
+
+	form {
+		// border: 2px solid white;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: 40%;
+	}
+
+	input,
+	textarea {
+		// margin: 3px auto;
+		// width: 50%;
+		border: none;
+		padding: 10px;
+		// font-family: $text-font;
+		border-radius: 10px;
+		// &:hover,
+		// &:focus {
+		// 	outline: 2px solid $purple;
+		// }
+	}
+
+	button {
+		width: 20%;
+		background-color: transparent;
+		border-radius: 10px;
+		padding: 8px 15px;
+		margin-top: 5px;
+		border: 3px solid white;
+		font-family: "Migra Extrabold", serif;
+		transition: 0.3s;
+		&:hover {
+			background-color: white;
+			scale: 0.9;
+		}
+	}
+}
+
+.contact-content {
+	// border: 1px solid red;
+	display: flex;
+	gap: 300px;
+}
+
+.contact-icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// border: 1px solid blue;
+	align-content: center;
+	// align-items: baseline;
+	// flex-wrap: wrap;
+
+	a {
+		color: white;
+		transition: 0.3s;
+	}
+
+	div {
+		display: flex;
+		gap: 30px;
+	}
+
+	// &:nth-child(1) {
+	// 	background-color: white;
+	// 	// background-color: transparent;
+	// 	// border-radius: 10px;
+	// 	// padding: 8px 15px;
+	// 	// margin-top: 5px;
+	// 	// border: 3px solid white;
+	// 	// font-family: "Migra Extrabold", serif;
+	// 	// transition: 0.3s;
+	// 	// &:hover {
+	// 	// 	background-color: white;
+	// 	// 	scale: 0.9;
+	// 	// }
+	// }
+}
+
+.resume-download {
+	background-color: transparent;
+	border-radius: 10px;
+	padding: 8px 25px;
+	border: 3px solid white;
+	font-family: "Migra Extrabold", serif;
+	transition: 0.3s;
+	color: black !important;
+	align-self: center;
+	margin-bottom: 30px;
+	&:hover {
+		background-color: white;
+		scale: 0.9;
+	}
+}
+
+.fa-brands,
+.fa-solid {
+	@include font-size(50);
+	transition: 0.3s;
+	&:hover {
+		scale: 0.9;
+	}
+}
+
+textarea {
+	height: 150px;
 }

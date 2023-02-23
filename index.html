@@ -25,7 +25,7 @@
 	<body>
 		<div id="home" class="home">
 			<!-- NAV STARTS -->
-			<nav class="on-scroll">
+			<nav id="nav">
 				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
 					<p class="logo">
@@ -49,13 +49,16 @@
 					<h1>Hi there, <span>I'm Victoria Reis</span></h1>
 					<h2>Frontend Web Developer</h2>
 				</div>
+				<a href="#about" aria-label="Interact to see more"
+					><i class="fa-solid fa-chevron-down" aria-hidden="true"></i
+				></a>
 			</header>
 			<!-- HEADER ENDS -->
 
 		<!-- MAIN STARTS -->
 		<main>
 			<!-- ABOUT SECTION STARTS -->
-			<section id="about" class="about">
+			<section id="about" class="about reveal">
 				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
 					<h3>About Me</h3>
@@ -85,7 +88,7 @@
 			<!-- ABOUT SECTION ENDS -->
 
 			<!-- SKILLS SECTION STARTS -->
-			<section id="skills" class="skills">
+			<section id="skills" class="skills reveal">
 				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
 				<h3>Skills</h3>
@@ -149,49 +152,92 @@
 			<!-- SKILLS SECTION ENDS -->
 
 			<!-- PROJECTS SECTION STARTS -->
-			<section id="projects" class="projects">
+			<section id="projects" class="projects reveal">
 				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
 				<h3>Projects</h3>
 				<!-- UL STARTS -->
 				<ul>
-					<li>
-						<h4>Fashion4U</h4>
-						<p>Responsive clothing e-commerce.</p>
-						<a href="https://fashion4u.netlify.app/">Live</a>
-						<a href="https://github.com/victoria-reis/e-commerce">Repo</a>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/e-commerce-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Fashion4U</h4>
+							<p>Responsive clothing e-commerce.</p>
+							<div class="project-links">
+								<a href="https://fashion4u.netlify.app/">Live</a>
+							<a href="https://github.com/victoria-reis/e-commerce">Repo</a>
+							</div>
+						</div>
 					</li>
-					<li>
-						<h4>Baby How you Feeling?</h4>
-						<p>Responsive React application inspired by the singer Lizzo.</p>
-						<a href="https://babyhowyoufeeling.netlify.app/">Live</a>
-						<a href="https://github.com/victoria-reis/lizzo-app">Repo</a>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/lizzo-app-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Baby How you Feeling?</h4>
+							<p>Responsive React application inspired by the singer Lizzo.</p>
+							<div class="project-links">
+								<a href="https://babyhowyoufeeling.netlify.app/">Live</a>
+								<a href="https://github.com/victoria-reis/lizzo-app">Repo</a>
+							</div>
+						</div>
 					</li>
-					<li>
-						<h4>Cope</h4>
-						<p>
-							Mobile application that helps users reduce their anxiety levels
-							created during Co.Lab (apprenticeship).
-						</p>
-						<a href="https://www.joincolab.io/projects/cope">About</a>
-						<a href="https://github.com/victoria-reis/cope-app">Repo</a>
+					<li class="cope reveal">
+						<div class="image-container">
+							<video
+								src="./assets/video/cope-video.mp4"
+								autoplay="true"
+								loop="true"
+							></video>
+							<!-- <img
+								src="./assets/images/google-pixel-6-pro-medium.png"
+								alt="Refrigeration Versification web page displayed both in laptop and smartphone"
+							/> -->
+						</div>
+						<div class="project-content">
+							<h4>Cope</h4>
+							<p>
+								Mobile application that helps users reduce their anxiety levels
+								created during Co.Lab (apprenticeship).
+							</p>
+							<div class="project-links">
+								<a href="https://www.joincolab.io/projects/cope">About</a>
+								<a href="https://github.com/victoria-reis/cope-app">Repo</a>
+							</div>
+						</div>
 					</li>
-					<li>
-						<h4>Self-Love Reminder</h4>
-						<p>
-							Responsive React application created to remind you to give
-							yourself some love.
-						</p>
-						<a href="https://self-love-reminder.netlify.app/">Live</a>
-						<a href="https://github.com/victoria-reis/self-love-app">Repo</a>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/self-love-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Self-Love Reminder</h4>
+							<p>
+								Responsive React application created to remind you to give
+								yourself some love.
+							</p>
+							<div class="project-links">
+								<a href="https://self-love-reminder.netlify.app/">Live</a>
+								<a href="https://github.com/victoria-reis/self-love-app">Repo</a>
+							</div>
+						</div>
 					</li>
-					<li>
-						<h4>Tech-Tacular Test</h4>
-						<p>JavaScript knowledge quiz application.</p>
-						<a href="https://techtaculartest.netlify.app/">Live</a>
-						<a href="https://github.com/victoria-reis/js-quiz-new-design"
-							>Repo</a
-						>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/js-quiz-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Tech-Tacular Test</h4>
+							<p>JavaScript knowledge quiz application.</p>
+							<div class="project-links">
+								<a href="https://techtaculartest.netlify.app/">Live</a>
+							<a href="https://github.com/victoria-reis/js-quiz-new-design"
+								>Repo</a
+							>
+							</div>
+						</div>
 					</li>
 				</ul>
 				<!-- UL ENDS -->
@@ -201,12 +247,13 @@
 			<!-- PROJECTS SECTION ENDS -->
 
 			<!-- CONTACT SECTION STARTS -->
-			<section id="contact" class="contact">
+			<section id="contact" class="contact reveal">
 				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
 				<h3>Contact Me</h3>
 				<!-- FORM STARTS -->
-				<form
+				<div class="contact-content">
+					<form
 					method="POST"
 					class="contactForm"
 					action="/thank-you.html"
@@ -245,12 +292,10 @@
 				</form>
 				<!-- FORM ENDS -->
 
-				<a href="mailto:victoriareis_@outlook.com" class="email-address"
-					>victoriareis_@outlook.com</a
-				>
-
 				<div class="contact-icons">
-					<a href="https://github.com/victoria-reis" aria-label="GitHub Link"
+					<a href="" download="/assets/docs/VictoriaReisResume.pdf" class="resume-download">My Resume</a>
+					<div>
+						<a href="https://github.com/victoria-reis" aria-label="GitHub Link"
 						><i class="fa-brands fa-github" aria-hidden="true"></i
 					></a>
 					<a
@@ -261,6 +306,8 @@
 					<a href="mailto:victoriareis_@outlook.com" aria-label="Email Me"
 						><i class="fa-solid fa-envelope" aria-hidden="true"></i
 					></a>
+					</div>
+				</div>
 				</div>
 				</div>
 				<!-- WRAPPER ENDS -->
@@ -271,8 +318,9 @@
 
 		<!-- FOOTER STARTS -->
 		<footer>
-			<p>Developed with ♥ by Victoria Reis</p>
+			<p>Developed with <span aria-label="love">♥</span> by Victoria Reis</p>
 		</footer>
 		<!-- FOOTER ENDS -->
 	</body>
+	<script src="./scripts/app.js"></script>
 </html>
