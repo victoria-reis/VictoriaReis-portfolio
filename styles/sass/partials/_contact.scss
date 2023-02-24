@@ -65,14 +65,14 @@
 // }
 
 .contact {
-	height: 40vh;
+	min-height: 40vh;
 	background-image: url("../assets/images/contact.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: center;
 
 	.wrapper {
-		padding-top: 30px;
+		padding: 30px 0;
 	}
 
 	form {
@@ -123,6 +123,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: -70px;
 	// border: 1px solid blue;
 	align-content: center;
 	// align-items: baseline;
@@ -152,6 +153,15 @@
 	// 	// 	scale: 0.9;
 	// 	// }
 	// }
+
+	.fa-brands,
+	.fa-solid {
+		@include font-size(50);
+		transition: 0.3s;
+		&:hover {
+			scale: 0.9;
+		}
+	}
 }
 
 .resume-download {
@@ -166,15 +176,6 @@
 	margin-bottom: 30px;
 	&:hover {
 		background-color: white;
-		scale: 0.9;
-	}
-}
-
-.fa-brands,
-.fa-solid {
-	@include font-size(50);
-	transition: 0.3s;
-	&:hover {
 		scale: 0.9;
 	}
 }

@@ -22,17 +22,25 @@ const init = () => {
 		}
 	});
 
-	// portrait switch on mouseover
-	const portrait = document.querySelector("img");
-	portrait.addEventListener("mouseenter", () => {
-		portrait.src = "./assets/images/portrait-2-2.jpg";
-		portrait.alt = "portrait of Victoria Reis laughing";
+	// typing animation
+	const typed = new Typed("#typed", {
+		strings: ["Frontend Developer", "UI Developer", "React Developer"],
+		typeSpeed: 100,
+		backSpeed: 80,
+		loop: true,
 	});
 
-	portrait.addEventListener("mouseleave", () => {
-		portrait.src = "./assets/images/portrait-1.jpg";
-		portrait.alt = "portrait of Victoria Reis";
-	});
+	// portrait switch on mouseover
+	// const portrait = document.querySelector("img");
+	// portrait.addEventListener("mouseenter", () => {
+	// 	portrait.src = "./assets/images/portrait-2-2.jpg";
+	// 	portrait.alt = "portrait of Victoria Reis laughing";
+	// });
+
+	// portrait.addEventListener("mouseleave", () => {
+	// 	portrait.src = "./assets/images/portrait-1.jpg";
+	// 	portrait.alt = "portrait of Victoria Reis";
+	// });
 
 	// mobile menu button open/close
 	// const mobileMenuIcon = document.querySelector(".nav-toggle");

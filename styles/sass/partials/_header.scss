@@ -72,14 +72,16 @@ header {
 
 	a {
 		position: absolute;
-		bottom: 80px;
+		bottom: 40px;
 	}
 }
 
 .fa-chevron-down {
-	// @include font-size(10);
+	@include font-size(35);
 	color: white;
-	animation: arrow 1s linear 0s infinite normal;
+	// font-weight: lighter;
+	// animation: arrow 1s linear 0s infinite normal;
+	animation: arrow-fade 1.2s infinite;
 	// position: absolute;
 	// bottom: 0;
 	// a {

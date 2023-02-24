@@ -53,7 +53,7 @@
 	background-size: cover;
 	background-position-y: center;
 	background-position-x: right;
-	height: 40vh;
+	min-height: 75vh;
 
 	.wrapper {
 		padding-top: 70px;
@@ -79,7 +79,7 @@
 		text-align: center;
 		background-color: rgba(255, 255, 255, 0.8);
 		mix-blend-mode: screen;
-		transition: 0.5s;
+		font-weight: bold;
 
 		// color: transparent;
 		// -webkit-background-clip: text;
@@ -87,14 +87,17 @@
 
 		&:hover p {
 			visibility: visible;
+			animation: skill-fadein 0.8s;
 		}
 
 		&:hover i {
 			visibility: hidden;
+			animation: skill-fadeout 0.8s;
 		}
 
 		&:hover span {
 			visibility: hidden;
+			animation: skill-fadeout 0.8s;
 		}
 
 		p {
@@ -109,6 +112,10 @@
 	span {
 		@include font-size(50);
 	}
+}
+
+.accessibility {
+	@include font-size(18);
 }
 
 // .html,

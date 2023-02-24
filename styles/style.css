@@ -331,6 +331,21 @@ button {
   border: none;
 }
 
+h1 {
+  font-size: 80px;
+  font-size: 4rem;
+  font-family: "Migra Extrabold", serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px;
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: white;
+}
+
 h3 {
   font-size: 50px;
   font-size: 2.5rem;
@@ -343,6 +358,11 @@ h4 {
   font-size: 1.5rem;
   font-family: "Migra Extrabold", serif;
   margin: 0;
+}
+
+.typed-cursor {
+  color: black;
+  margin-left: -8px;
 }
 
 footer p {
@@ -361,25 +381,63 @@ footer p {
   opacity: 1;
 }
 
-@-webkit-keyframes arrow {
+@-webkit-keyframes arrow-fade {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translate(0, 25px);
+    opacity: 0;
   }
 }
 
-@keyframes arrow {
+@keyframes arrow-fade {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translate(0, 25px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes skill-fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes skill-fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes skill-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes skill-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .logo {
@@ -471,13 +529,15 @@ header {
 }
 header a {
   position: absolute;
-  bottom: 80px;
+  bottom: 40px;
 }
 
 .fa-chevron-down {
+  font-size: 35px;
+  font-size: 1.75rem;
   color: white;
-  -webkit-animation: arrow 1s linear 0s infinite normal;
-          animation: arrow 1s linear 0s infinite normal;
+  -webkit-animation: arrow-fade 1.2s infinite;
+          animation: arrow-fade 1.2s infinite;
 }
 
 .about {
@@ -486,7 +546,7 @@ header a {
   background-size: contain;
   background-position-y: center;
   background-position-x: right;
-  height: 60vh;
+  min-height: 100vh;
 }
 .about .wrapper {
   padding-top: 70px;
@@ -535,7 +595,7 @@ header a {
   background-size: cover;
   background-position-y: center;
   background-position-x: right;
-  height: 40vh;
+  min-height: 75vh;
 }
 .skills .wrapper {
   padding-top: 70px;
@@ -571,17 +631,22 @@ header a {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   mix-blend-mode: screen;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  font-weight: bold;
 }
 .skills li:hover p {
   visibility: visible;
+  -webkit-animation: skill-fadein 0.8s;
+          animation: skill-fadein 0.8s;
 }
 .skills li:hover i {
   visibility: hidden;
+  -webkit-animation: skill-fadeout 0.8s;
+          animation: skill-fadeout 0.8s;
 }
 .skills li:hover span {
   visibility: hidden;
+  -webkit-animation: skill-fadeout 0.8s;
+          animation: skill-fadeout 0.8s;
 }
 .skills li p {
   position: absolute;
@@ -595,8 +660,12 @@ header a {
   font-size: 2.5rem;
 }
 
+.accessibility {
+  font-size: 18px;
+  font-size: 0.9rem;
+}
+
 .projects {
-  min-height: 60vh;
   background-image: url("../assets/images/projects.png");
   background-size: contain;
   background-position-x: center;
@@ -661,8 +730,8 @@ header a {
   background-image: url("../assets/images/home.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5px 20px;
-  border-radius: 13px;
+  padding: 7px 20px 5px;
+  border-radius: 14px;
   font-family: "Migra Extrabold", serif;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -686,14 +755,14 @@ video {
 }
 
 .contact {
-  height: 40vh;
+  min-height: 40vh;
   background-image: url("../assets/images/contact.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
 }
 .contact .wrapper {
-  padding-top: 30px;
+  padding: 30px 0;
 }
 .contact form {
   display: -webkit-box;
@@ -746,6 +815,7 @@ video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -70px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -759,6 +829,17 @@ video {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+.contact-icons .fa-brands,
+.contact-icons .fa-solid {
+  font-size: 50px;
+  font-size: 2.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact-icons .fa-brands:hover,
+.contact-icons .fa-solid:hover {
+  scale: 0.9;
 }
 
 .resume-download {
@@ -776,18 +857,6 @@ video {
 }
 .resume-download:hover {
   background-color: white;
-  scale: 0.9;
-}
-
-.fa-brands,
-.fa-solid {
-  font-size: 50px;
-  font-size: 2.5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.fa-brands:hover,
-.fa-solid:hover {
   scale: 0.9;
 }
 

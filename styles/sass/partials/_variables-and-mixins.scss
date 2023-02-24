@@ -49,15 +49,15 @@ $yellow: #ffc744;
 	font-family: $logo-font;
 }
 
-// @mixin h1-font {
-// 	@include font-size(40);
-// 	font-family: $home-font;
-// }
+@mixin h1-font {
+	@include font-size(80);
+	font-family: $logo-font;
+}
 
-// @mixin h2-font {
-// 	@include font-size(35);
-// 	font-family: $home-font;
-// }
+@mixin h2-font {
+	@include font-size(50);
+	font-family: $body-font;
+}
 
 @mixin h3-font {
 	@include font-size(50);
