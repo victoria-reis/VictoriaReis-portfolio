@@ -1,65 +1,92 @@
 .contact {
-	h3 {
-		margin: 60px auto 0;
-		width: fit-content;
-	}
+	min-height: 40vh;
+	background-image: url("../assets/images/contact.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
 
 	.wrapper {
+		padding: 30px 0;
+	}
+
+	form {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		gap: 10px;
+		width: 40%;
 	}
+
+	input,
+	textarea {
+		border: none;
+		padding: 10px;
+		border-radius: 10px;
+	}
+
+	button {
+		width: 20%;
+		background-color: transparent;
+		border-radius: 10px;
+		padding: 8px 15px;
+		margin-top: 5px;
+		border: 3px solid white;
+		font-family: "Migra Extrabold", serif;
+		transition: 0.3s;
+		&:hover {
+			background-color: white;
+			scale: 0.9;
+		}
+	}
+}
+
+.contact-content {
+	display: flex;
+	gap: 300px;
 }
 
 .contact-icons {
-	margin-top: 30px;
-	i {
-		@include font-size(40);
-		display: inline-block;
-	}
-}
-
-.email-address {
-	&:hover,
-	&:focus {
-		@include gradient-background;
-	}
-}
-
-.contactForm {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	margin: 20px auto;
-}
+	justify-content: center;
+	margin-top: -70px;
+	align-content: center;
 
-input,
-textarea,
-button[type="submit"] {
-	margin: 3px auto;
-	width: 50%;
-	border: none;
-	padding: 10px;
-	font-family: $text-font;
-	border-radius: 10px;
-	&:hover,
-	&:focus {
-		outline: 2px solid $purple;
+	a {
+		color: white;
+		transition: 0.3s;
+	}
+
+	div {
+		display: flex;
+		gap: 30px;
+	}
+
+	.fa-brands,
+	.fa-solid {
+		@include font-size(50);
+		transition: 0.3s;
+		&:hover {
+			scale: 0.9;
+		}
 	}
 }
 
-button[type="submit"] {
-	width: 170px;
-	background-color: $purple;
-	color: white;
-	margin-top: 15px;
-	&:hover,
-	&:focus {
-		@include gradient-background;
+.resume-download {
+	background-color: transparent;
+	border-radius: 10px;
+	padding: 8px 25px;
+	border: 3px solid white;
+	font-family: "Migra Extrabold", serif;
+	transition: 0.3s;
+	color: black !important;
+	align-self: center;
+	margin-bottom: 30px;
+	&:hover {
+		background-color: white;
+		scale: 0.9;
 	}
 }
 
 textarea {
-	height: 200px;
+	height: 150px;
 }

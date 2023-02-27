@@ -13,463 +13,319 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
+	<body>
+		<div id="home" class="home">
+			<!-- NAV STARTS -->
+			<nav id="nav">
+				<!-- WRAPPER STARTS -->
+				<div class="wrapper">
+					<p class="logo">
+						<a href="#home">V<span class="logo-span">R</span></a>
+					</p>
+					<ul class="nav-list">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<button class="nav-toggle">
+						<span class="sr-only">Open or Close Menu</span>
+						<span class="bar-top"></span>
+						<span class="bar-mid"></span>
+						<span class="bar-bot"></span>
+					</button>
+				</div>
+				<!-- WRAPPER ENDS -->
+			</nav>
+			<!-- NAV ENDS -->
 
-	<body id="home">
-		<nav class="mobile-nav">
-			<button class="nav-toggle">
-				<span class="sr-only">Open or Close Menu</span>
-				<span class="bar-top"></span>
-				<span class="bar-mid"></span>
-				<span class="bar-bot"></span>
-			</button>
-		</nav>
-		<!-- mobile nav ends -->
-
-		<nav class="navigation">
-			<div class="wrapper">
-				<ul class="menu-ul">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-			<!-- wrapper ends -->
-		</nav>
-		<!-- nav ends -->
-
-		<header>
-			<div class="wrapper">
+			<!-- HEADER STARTS -->
+			<header class="wrapper">
 				<div>
 					<h1>Hi there, <span>I'm Victoria Reis</span></h1>
-					<h2>Frontend Web Developer</h2>
+					<h2><span id="typed"></span></h2>
 				</div>
-				<div class="image-container image-shadow">
-					<img
-						src="./assets/images/portrait-1.jpg"
-						alt="portrait of Victoria Reis"
-					/>
-				</div>
-			</div>
-			<!-- wrapper ends -->
-			<div class="wrapper">
 				<a href="#about" aria-label="Interact to see more"
 					><i class="fa-solid fa-chevron-down" aria-hidden="true"></i
 				></a>
-			</div>
-		</header>
-		<!-- header ends -->
+			</header>
+			<!-- HEADER ENDS -->
 
+		<!-- MAIN STARTS -->
 		<main>
-			<section class="about reveal" id="about">
+			<!-- ABOUT SECTION STARTS -->
+			<section id="about" class="about reveal">
+				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
 					<h3>About Me</h3>
-					<p>
+					<!-- ABOUT CONTENT STARTS -->
+					<div class="about-content">
+						<div class="image-container">
+						<img
+								src="./assets/images/portrait-1.jpg"
+								alt="portrait of Victoria Reis"
+							/>
+						</div>
+						<p>
 						I'm Victoria, my pronouns are she/her. I'm a Front-End Web Developer
 						based in Toronto, ON with 5+ years of experience in Hospitality and
 						Retail. With my attention to detail, communication and creativity I
-						bring responsive, clean and accessible applications ideas to life.
-						I'm looking for opportunities to learn new languages and frameworks,
+						bring responsive, clean and accessible applications ideas to life. I'm
+						looking for opportunities to learn new languages and frameworks,
 						improve my skills, and give back to the tech community.
-					</p>
-					<p>
-						When I'm not coding you can find me taking care of my plant
-						children, hanging out with friends or making some kind of dessert.
-					</p>
+						<br><br/>
+						When I'm not coding you can find me taking care of my plant children, hanging out with friends or making some kind of dessert.						
+						</p>
+					</div>
+				<!-- ABOUT CONTENT ENDS -->
 				</div>
-				<!-- wrapper ends -->
+				<!-- WRAPPER ENDS -->
 			</section>
-			<!-- about section ends -->
+			<!-- ABOUT SECTION ENDS -->
 
-			<section class="skills reveal" id="skills">
+			<!-- SKILLS SECTION STARTS -->
+			<section id="skills" class="skills reveal">
+				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
-					<h3>Skills</h3>
-					<ul>
-						<li>
-							<i class="devicon-html5-plain" aria-hidden="true"></i>
-							<p>HTML5</p>
-						</li>
-						<li>
-							<i class="devicon-css3-plain" aria-hidden="true"></i>
-							<p>CSS</p>
-						</li>
-						<li>
-							<i class="devicon-sass-original" aria-hidden="true"></i>
-							<p>Sass</p>
-						</li>
-						<li>
-							<i class="devicon-javascript-plain" aria-hidden="true"></i>
-							<p>JavaScript</p>
-						</li>
-						<li>
-							<i class="devicon-react-original" aria-hidden="true"></i>
-							<p>React</p>
-						</li>
-						<li>
-							<i class="devicon-jquery-plain" aria-hidden="true"></i>
-							<p>jQuery</p>
-						</li>
-						<li>
-							<i class="devicon-git-plain" aria-hidden="true"></i>
-							<p>Git</p>
-						</li>
-						<li>
-							<i class="devicon-firebase-plain" aria-hidden="true"></i>
-							<p>Firebase</p>
-						</li>
-						<li>
-							<i class="devicon-github-original" aria-hidden="true"></i>
-							<p>GitHub</p>
-						</li>
-						<li>
-							<span class="material-icons-outlined" aria-hidden="true">
-								devices
-							</span>
-							<p>Responsive Design</p>
-						</li>
-						<li>
-							<i class="fa-regular fa-universal-access" aria-hidden="true"></i>
-							<p>Accessibility</p>
-						</li>
-					</ul>
-					<!-- skills ul ends -->
+				<h3>Skills</h3>
+				<!-- UL STARTS -->
+				<ul>
+					<li class="html">
+						<i class="devicon-html5-plain" aria-hidden="true"></i>
+						<p>HTML5</p>
+					</li>
+					<li class="css">
+						<i class="devicon-css3-plain" aria-hidden="true"></i>
+						<p>CSS</p>
+					</li>
+					<li class="sass">
+						<i class="devicon-sass-original" aria-hidden="true"></i>
+						<p>Sass</p>
+					</li>
+					<li class="tailwind">
+						<i class="devicon-tailwindcss-plain" aria-hidden="true"></i>
+						<p>Tailwind</p>
+					</li>
+					<li class="js">
+						<i class="devicon-javascript-plain" aria-hidden="true"></i>
+						<p>JavaScript</p>
+					</li>
+					<li class="react">
+						<i class="devicon-react-original" aria-hidden="true"></i>
+						<p>React and React Native</p>
+					</li>
+					<li class="redux">
+						<i class="devicon-redux-original" aria-hidden="true"></i>
+						<p>Redux</p>
+					</li>
+					<li class="git">
+						<i class="devicon-git-plain" aria-hidden="true"></i>
+						<p>Git</p>
+					</li>
+					<li class="github">
+						<i class="devicon-github-original" aria-hidden="true"></i>
+						<p>GitHub</p>
+					</li>
+					<li class="firebase">
+						<i class="devicon-firebase-plain" aria-hidden="true"></i>
+						<p>Firebase</p>
+					</li>
+					<li class="responsive-design">
+						<span class="material-icons-outlined" aria-hidden="true">
+							devices
+						</span>
+						<p>Responsive Design</p>
+					</li>
+					<li class="accessibility">
+						<i class="fa-regular fa-universal-access" aria-hidden="true"></i>
+						<p>Accessibility</p>
+					</li>
+				</ul>
+				<!-- UL ENDS -->
 				</div>
-				<!-- wrapper ends -->
+				<!-- WRAPPER ENDS -->
 			</section>
-			<!-- skills section ends -->
+			<!-- SKILLS SECTION ENDS -->
 
-			<section class="projects reveal" id="projects">
+			<!-- PROJECTS SECTION STARTS -->
+			<section id="projects" class="projects reveal">
+				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
-					<h3>Projects</h3>
-					<ul>
-						<li class="e-commerce reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<img
-										src="./assets/images/e-commerce-mockup.png"
-										alt="Lizzo-App web page displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Fashion4U</h4>
-								<div class="project-info">
-									<p>
-										<a href="https://fashion4u.netlify.app/">Live</a>|<a
-											href="https://github.com/victoria-reis/e-commerce"
-											>GitHub</a
-										>
-									</p>
-								</div>
-								<p>Clothing e-commerce.</p>
-								<div class="project-tools">
-									<p>React</p>
-									<p>Tailwind</p>
-									<p>Rest API</p>
-								</div>
+				<h3>Projects</h3>
+				<!-- UL STARTS -->
+				<ul>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/e-commerce-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Fashion4U</h4>
+							<p>Responsive clothing e-commerce.</p>
+							<div class="project-links">
+								<a href="https://fashion4u.netlify.app/">Live</a>
+							<a href="https://github.com/victoria-reis/e-commerce">Repo</a>
 							</div>
-							<!-- project container ends -->
-						</li>
-						<li class="lizzo-app reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<img
-										src="./assets/images/lizzo-app-mockup.png"
-										alt="Lizzo-App web page displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Baby How You Feeling?</h4>
-								<div class="project-info">
-									<p>
-										<a href="https://babyhowyoufeeling.netlify.app/">Live</a>|<a
-											href="https://github.com/victoria-reis/lizzo-app"
-											>GitHub</a
-										>
-									</p>
-								</div>
-								<p>
-									Responsive React application inspired by the singer Lizzo.
-								</p>
-								<div class="project-tools">
-									<p>React</p>
-									<p>CSS</p>
-									<p>Redux</p>
-								</div>
+						</div>
+					</li>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/lizzo-app-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Baby How you Feeling?</h4>
+							<p>Responsive React application inspired by the singer Lizzo.</p>
+							<div class="project-links">
+								<a href="https://babyhowyoufeeling.netlify.app/">Live</a>
+								<a href="https://github.com/victoria-reis/lizzo-app">Repo</a>
 							</div>
-							<!-- project container ends -->
-						</li>
-						<li class="cope reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<video
-										src="./assets/video/cope-video.mp4"
-										autoplay="true"
-										loop="true"
-									></video>
-									<img
-										src="./assets/images/google-pixel-6-pro-medium.png"
-										alt="Refrigeration Versification web page displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Cope</h4>
-								<div class="project-info">
-									<p>
-										<a href="https://github.com/victoria-reis/cope-app"
-											>GitHub</a
-										>
-									</p>
-								</div>
-								<p>
-									Cope is a mobile app that helps users reduce their anxiety
-									levels.
-								</p>
-								<div class="project-tools">
-									<p>React Native</p>
-									<p>Styled Components</p>
-									<p>Figma</p>
-									<p>Agile Methodologies</p>
-								</div>
+						</div>
+					</li>
+					<li class="cope reveal">
+						<div class="image-container">
+							<video
+								src="./assets/video/cope-video.mp4"
+								autoplay="true"
+								loop="true"
+							></video>
+							<!-- <img
+								src="./assets/images/google-pixel-6-pro-medium.png"
+								alt="Refrigeration Versification web page displayed both in laptop and smartphone"
+							/> -->
+						</div>
+						<div class="project-content">
+							<h4>Cope</h4>
+							<p>
+								Mobile application that helps users reduce their anxiety levels
+								created during Co.Lab (apprenticeship).
+							</p>
+							<div class="project-links">
+								<a href="https://www.joincolab.io/projects/cope">About</a>
+								<a href="https://github.com/victoria-reis/cope-app">Repo</a>
 							</div>
-							<!-- project container ends -->
-						</li>
-						<li class="refrigeration reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<img
-										src="./assets/images/refrigeration-mockup.png"
-										alt="Refrigeration Versification web page displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Refrigeration Versification</h4>
-								<div class="project-info">
-									<p>
-										<a
-											href="https://incomparable-bienenstitch-e7fd72.netlify.app/"
-											>Live</a
-										>|<a href="https://github.com/victoria-reis/magnetic-poetry"
-											>GitHub</a
-										>
-									</p>
-								</div>
-								<p>A digital version of Magnetic Poetry!</p>
-								<div class="project-tools">
-									<p>React</p>
-									<p>SCSS</p>
-									<p>Firebase</p>
-									<p>Group-Programming</p>
-								</div>
+						</div>
+					</li>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/self-love-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Self-Love Reminder</h4>
+							<p>
+								Responsive React application created to remind you to give
+								yourself some love.
+							</p>
+							<div class="project-links">
+								<a href="https://self-love-reminder.netlify.app/">Live</a>
+								<a href="https://github.com/victoria-reis/self-love-app">Repo</a>
 							</div>
-							<!-- project container ends -->
-						</li>
-						<li class="self-love reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<img
-										src="./assets/images/self-love-mockup.png"
-										alt="Self-love Reminder App web page displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Self-Love Reminder</h4>
-								<div class="project-info">
-									<p>
-										<a href="https://self-love-reminder.netlify.app/">Live</a
-										>|<a href="https://github.com/victoria-reis/self-love-app"
-											>GitHub</a
-										>
-									</p>
-								</div>
-								<p>App created to remind you to give yourself some love.</p>
-								<div class="project-tools">
-									<p>React</p>
-									<p>SCSS</p>
-									<p>Firebase</p>
-								</div>
+						</div>
+					</li>
+					<li class="reveal">
+						<div class="image-container">
+							<img src="./assets/images/js-quiz-mockup.png" alt="">
+						</div>
+						<div class="project-content">
+							<h4>Tech-Tacular Test</h4>
+							<p>JavaScript knowledge quiz application.</p>
+							<div class="project-links">
+								<a href="https://techtaculartest.netlify.app/">Live</a>
+							<a href="https://github.com/victoria-reis/js-quiz-new-design"
+								>Repo</a
+							>
 							</div>
-							<!-- project container ends -->
-						</li>
-						<li class="js-quiz reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<img
-										src="./assets/images/js-quiz-mockup.png"
-										alt="Tech-Tacular Test web page displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Tech-Tacular Test</h4>
-								<div class="project-info">
-									<p>
-										<a href="https://techtaculartest.netlify.app/">Live</a>|<a
-											href="https://github.com/victoria-reis/js-quiz-new-design"
-											>GitHub</a
-										>
-									</p>
-								</div>
-								<p>
-									JavaScript knowledge quiz app created and designed by myself
-									and Steve Mishos.
-								</p>
-								<div class="project-tools">
-									<p>HTML</p>
-									<p>SCSS</p>
-									<p>JavaScript</p>
-									<p>Pair-programming</p>
-									<p>Rest API</p>
-								</div>
-							</div>
-							<!-- project container ends -->
-						</li>
-						<!-- js-quiz ends -->
-						<li class="planted reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<img
-										src="./assets/images/planted-mockup.png"
-										alt="Planted web page displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Planted</h4>
-								<div class="project-info">
-									<p>
-										<a href="https://welcometoplanted.netlify.app/">Live</a>|<a
-											href="https://github.com/victoria-reis/project-1-planted"
-											>GitHub</a
-										>
-									</p>
-								</div>
-								<p>
-									PSD conversion into a multi-page, functional, responsive
-									website.
-								</p>
-								<div class="project-tools">
-									<p>HTML</p>
-									<p>SCSS</p>
-									<p>JavaScript</p>
-								</div>
-							</div>
-							<!-- project container ends -->
-						</li>
-						<!-- planted ends -->
-						<li class="tasty reveal">
-							<div class="project-container">
-								<div class="image-container">
-									<img
-										src="./assets/images/tasty-mockup.png"
-										alt="Tasty design displayed both in laptop and smartphone"
-									/>
-								</div>
-								<h4>Tasty</h4>
-								<div class="project-info">
-									<p>
-										<a href="https://codepen.io/victoriareis/full/OJOdbbG"
-											>CodePen</a
-										>
-									</p>
-								</div>
-								<p>PSD design conversion into responsive website elements.</p>
-								<div class="project-tools">
-									<p>HTML</p>
-									<p>CSS</p>
-									<p>CodePen</p>
-								</div>
-							</div>
-							<!-- project container ends -->
-						</li>
-						<!-- tasty ends -->
-					</ul>
+						</div>
+					</li>
+				</ul>
+				<!-- UL ENDS -->
 				</div>
-				<!-- wrapper ends -->
+				<!-- WRAPPER ENDS -->
 			</section>
-			<!-- projects section ends -->
+			<!-- PROJECTS SECTION ENDS -->
 
-			<section class="contact reveal" id="contact">
+			<!-- CONTACT SECTION STARTS -->
+			<section id="contact" class="contact reveal">
+				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
-					<a href="#home" aria-label="Back to Home"
-						><i class="fa-solid fa-chevron-up" aria-hidden="true"></i
-					></a>
-					<h3>Contact Me</h3>
+				<h3>Contact Me</h3>
+				<!-- FORM STARTS -->
+				<div class="contact-content">
 					<form
-						method="POST"
-						class="contactForm"
-						action="/thank-you.html"
-						name="contactForm"
-						data-netlify="true"
-					>
-						<label for="name" class="sr-only">Name</label>
-						<input
-							type="text"
-							name="name"
-							id="name"
-							placeholder="Name"
-							required
-						/>
+					name="contactForm"
+					method="POST"
+					data-netlify="true"
+					class="contactForm"
+				>
+					<label for="name" class="sr-only">Name</label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Name"
+						required
+					/>
 
-						<label for="email" class="sr-only">Email</label>
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="Email address"
-							required
-						/>
+					<label for="email" class="sr-only">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Email address"
+						required
+					/>
 
-						<label for="message" class="sr-only">Message for us</label>
-						<textarea
-							name="message"
-							name="message"
-							id="message"
-							placeholder="Message"
-							maxlength="200"
-							required
-						></textarea>
+					<label for="message" class="sr-only">Message for us</label>
+					<textarea
+						name="message"
+						id="message"
+						placeholder="Message"
+						maxlength="200"
+						required
+					></textarea>
 
-						<button type="submit">Send</button>
-					</form>
-					<!-- form ends -->
+					<button type="submit" id="form-button">Send</button>
+				</form>
+				<!-- FORM ENDS -->
 
-					<p>
-						<a href="mailto:victoriareis_@outlook.com" class="email-address"
-							>victoriareis_@outlook.com</a
-						>
-					</p>
-
-					<div class="contact-icons">
+				<div class="contact-icons">
+					<a href="" download="/assets/docs/VictoriaReisResume.pdf" class="resume-download">My Resume</a>
+					<div>
 						<a href="https://github.com/victoria-reis" aria-label="GitHub Link"
-							><i class="fa-brands fa-github" aria-hidden="true"></i
-						></a>
-						<a
-							href="https://www.linkedin.com/in/-victoriareis/"
-							aria-label="LinkedIn Link"
-							><i class="fa-brands fa-linkedin" aria-hidden="true"></i
-						></a>
-						<a href="mailto:victoriareis_@outlook.com" aria-label="Email Me"
-							><i class="fa-solid fa-envelope" aria-hidden="true"></i
-						></a>
+						><i class="fa-brands fa-github" aria-hidden="true"></i
+					></a>
+					<a
+						href="https://www.linkedin.com/in/-victoriareis/"
+						aria-label="LinkedIn Link"
+						><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+					></a>
+					<a href="mailto:victoriareis_@outlook.com" aria-label="Email Me"
+						><i class="fa-solid fa-envelope" aria-hidden="true"></i
+					></a>
 					</div>
 				</div>
-				<!-- wrapper ends -->
+				</div>
+				</div>
+				<!-- WRAPPER ENDS -->
 			</section>
-			<!-- contact section ends -->
+			<!-- CONTACT SECTION ENDS -->
 		</main>
-		<!-- main ends -->
+		<!-- MAIN ENDS -->
 
+		<!-- FOOTER STARTS -->
 		<footer>
-			<div class="wrapper">
-				<p>Developed with ♥ by Victoria Reis</p>
-			</div>
-			<!-- wrapper ends -->
+			<p>Developed with <span aria-label="love">♥</span> by Victoria Reis</p>
 		</footer>
-		<!-- footer ends -->
+		<!-- FOOTER ENDS -->
 	</body>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script src="./scripts/app.js"></script>
 </html>

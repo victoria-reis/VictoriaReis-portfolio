@@ -1,273 +1,176 @@
 @media (max-width: 1200px) {
-	header {
-		height: 80vh;
+	.wrapper {
+		width: 85%;
 	}
+
 	h1 {
-		@include font-size(70);
+		@include font-size(60);
 	}
 
 	h2 {
-		@include font-size(40);
+		@include font-size(50);
 	}
 
 	.about {
-		padding: 80px 0;
-	}
+		min-height: 80vh;
 
-	.skills {
-		padding: 80px 0;
-		ul {
-			li {
-				i,
-				span {
-					@include font-size(60);
-				}
-			}
+		.image-container {
+			width: 50%;
+		}
+
+		.wrapper {
+			padding: 70px 0 70px;
 		}
 	}
 
-	.projects {
-		padding-top: 80px;
+	.project-content {
+		width: 40%;
 	}
 
-	video {
-		top: 7px;
-		height: 94%;
+	.contact {
+		form {
+			width: 70%;
+		}
 	}
 
-	input,
-	textarea {
-		width: 60%;
+	.contact-content {
+		gap: 80px;
 	}
 }
 
-@media (max-width: 950px) {
-	html {
-		font-size: 113%;
-	}
+@media (max-width: 800px) {
 	.wrapper {
 		width: 90%;
 	}
 
-	header {
-		height: auto;
-		.wrapper {
-			flex-direction: column;
+	h1 {
+		@include font-size(50);
+	}
 
-			img:hover {
-				cursor: auto;
-			}
-		}
+	h2 {
+		@include font-size(35);
+	}
 
-		div:nth-of-type(1) {
-			text-align: center;
-		}
+	h4 {
+		text-align: center;
+		margin-top: 5px;
+	}
 
-		h1,
-		h2 {
-			margin: 0 auto;
-		}
+	.nav-toggle {
+		display: block;
+		margin-left: auto;
+	}
 
-		.image-container {
-			max-width: 50%;
-			margin: 60px auto;
+	.on-scroll {
+		.nav-list {
+			background-image: none;
+			background-clip: inherit;
+			color: black;
 		}
 	}
 
-	.about {
+	.nav-list {
+		flex-direction: column;
+		position: absolute;
+		width: 250px;
 		padding: 40px 0;
-		margin: 0 auto;
-		text-align: center;
+		color: black;
+		background-color: rgba(255, 255, 255, 0.95);
+		border-radius: 30px;
+		box-shadow: 0px 0px 25px 0px rgb(68, 68, 68);
+		top: 80px;
+		right: -300px;
+		transition: 0.5s;
+	}
+
+	.nav-list.open-menu {
+		margin-right: -125px;
+		right: 50%;
+	}
+
+	.about {
+		.image-container {
+			width: 60%;
+		}
+	}
+
+	.about-content {
+		flex-direction: column;
+
 		p {
-			text-align: center;
-			margin: 0 auto;
 			max-width: 100%;
+			text-align: center;
 		}
 	}
 
 	.skills {
-		text-align: center;
-		ul {
-			li {
-				width: 100px;
-			}
+		li {
+			width: 100px;
+			height: 100px;
 		}
+	}
+
+	.accessibility,
+	.js,
+	.react,
+	.responsive-design {
+		@include font-size(16);
 	}
 
 	.projects {
-		padding: 0;
-		text-align: center;
-		h4 {
-			margin-top: 20px;
+		ul {
+			gap: 70px;
+		}
+
+		li {
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 
-	.e-commerce,
-	.lizzo-app,
-	.cope,
-	.refrigeration,
-	.self-love,
-	.js-quiz,
-	.planted,
-	.tasty {
-		max-width: 100%;
-		margin: 100px auto;
-		h4 {
-			width: 80%;
-			margin: 0;
-		}
+	.project-content {
+		width: auto;
+		max-width: 80%;
 
-		.image-container {
-			width: 60%;
-			margin: 0 auto;
-		}
-	}
-
-	.project-container {
-		flex-direction: column;
-	}
-
-	.refrigeration,
-	.js-quiz {
-		.project-container {
-			margin-top: -25px;
-		}
-	}
-
-	.e-commerce,
-	.cope,
-	.self-love,
-	.planted {
 		p {
 			text-align: center;
 		}
 	}
 
-	.project-info {
-		padding: 0;
-	}
+	.cope {
+		h4 {
+			margin-top: 8px;
+		}
+		.project-content {
+			width: 80%;
+		}
 
-	video {
-		top: 8.5px;
+		.image-container {
+			margin-right: 0;
+		}
 	}
 
 	.contact {
-		h3 {
-			margin: 60px auto 0;
+		form {
+			width: 100%;
 		}
+
+		button {
+			align-self: flex-end;
+			width: 90px;
+		}
+	}
+
+	.contact-content {
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
+		gap: 100px;
 	}
 
 	.contact-icons {
-		margin: 10px auto;
-	}
-}
-
-@media (max-width: 750px) {
-	.navigation {
-		.wrapper {
-			width: 100vw;
-			height: 100vh;
-			right: -100vw;
-			text-align: center;
-			position: fixed;
-			background-color: rgba(189, 94, 194, 0.8);
-			z-index: 5;
-			transition: 0.6s;
-		}
-	}
-
-	.nav-toggle {
-		display: inline-block;
-	}
-
-	.menu-ul {
-		flex-direction: column;
-		justify-content: space-around;
-		margin: auto;
-		margin-top: calc((100vh - 400px) / 2);
-		height: 400px;
-		li {
-			@include font-size(30);
-
-			a {
-				background-color: white;
-				padding: 8px 15px;
-				&:hover,
-				&:focus {
-					color: black;
-					font-weight: bolder;
-					background-image: none;
-					border: 2px solid white;
-				}
-			}
-		}
-	}
-
-	header {
-		padding-top: 80px;
-
-		h1 {
-			@include font-size(60);
-		}
-
-		h2 {
-			@include font-size(30);
-		}
-
-		.image-container {
-			max-width: 60%;
-		}
-	}
-
-	.e-commerce,
-	.lizzo-app,
-	.cope,
-	.refrigeration,
-	.self-love,
-	.js-quiz,
-	.planted,
-	.tasty {
-		max-width: 100%;
-		margin: 100px auto;
-		h4 {
-			width: 80%;
-			margin: 0;
-		}
-
-		.image-container {
-			width: 75%;
-		}
-	}
-
-	video {
-		top: 6px;
-	}
-
-	.contact {
-		h3 {
-			@include font-size(50);
-		}
-	}
-
-	input,
-	textarea {
-		width: 90%;
-	}
-
-	.thank-you-page {
-		h1 {
-			@include font-size(30);
-			line-height: 38px;
-		}
-		section {
-			width: 70%;
-			min-width: auto;
-			padding: 10px;
-		}
-
-		a {
-			@include font-size(18);
-			width: 60%;
+		div {
+			justify-content: center;
 		}
 	}
 }

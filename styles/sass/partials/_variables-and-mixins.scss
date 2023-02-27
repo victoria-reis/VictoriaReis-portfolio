@@ -1,24 +1,18 @@
 // fonts
 @font-face {
-	font-family: "Thin Made Bon Voyage";
-	src: url("../assets/typography/made-bon-voyage-thin.woff") format("woff");
+	font-family: "Migra Extrabold";
+	src: url("../assets/typography/Migra-Extrabold.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Regular Made Bon Voyage";
-	src: url("../assets/typography/made-bon-voyage-regular.woff") format("woff");
+	font-family: "Migra Extralight";
+	src: url("../assets/typography/Migra-Extralight.woff2") format("woff2");
 }
 
 // typography variables
-$heading-font: "Thin Made Bon Voyage", serif;
-$text-font: "Open Sans", sans-serif;
-
-// color variables
-$purple: #bd5ec2;
-$pink: #f862a7;
-$coral: #ff7a87;
-$salmon: #ffa26a;
-$yellow: #ffc744;
+$logo-font: "Migra Extrabold", serif;
+$home-font: "Migra Extralight", serif;
+$body-font: "Open Sans", sans-serif;
 
 // typography mixins
 @mixin font-size($sizeValue) {
@@ -26,34 +20,32 @@ $yellow: #ffc744;
 	font-size: calc($sizeValue / 20) * 1rem;
 }
 
+@mixin logo-font {
+	@include font-size(50);
+	font-family: $logo-font;
+}
+
+@mixin nav-font {
+	@include font-size(24);
+	font-family: $logo-font;
+}
+
 @mixin h1-font {
 	@include font-size(80);
-	font-family: $heading-font;
+	font-family: $logo-font;
 }
 
 @mixin h2-font {
 	@include font-size(50);
-	font-family: $heading-font;
+	font-family: $body-font;
 }
 
 @mixin h3-font {
-	@include font-size(60);
-	font-family: $heading-font;
+	@include font-size(50);
+	font-family: $logo-font;
 }
 
 @mixin h4-font {
-	@include font-size(40);
-	font-family: "Regular Made Bon Voyage";
-}
-
-// other mixins
-@mixin gradient-background {
-	background-image: linear-gradient(
-		90deg,
-		$purple 0%,
-		$pink 30%,
-		$coral 70%,
-		$salmon 90%,
-		$yellow 100%
-	);
+	@include font-size(30);
+	font-family: $logo-font;
 }
