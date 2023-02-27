@@ -14,7 +14,7 @@
 	background-size: contain;
 	background-position-y: center;
 	background-position-x: right;
-	min-height: 100vh;
+	min-height: 90vh;
 	// border: 1px solid red;
 
 	// .wrapper {
@@ -25,6 +25,8 @@
 
 	.wrapper {
 		padding-top: 70px;
+		// border: 1px solid blue;
+		// height: 100vh;
 	}
 
 	.image-container {
@@ -51,7 +53,8 @@
 
 .about-content {
 	display: flex;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
+	// height: 100%;
 	gap: 30px;
 	justify-content: center;
 	align-items: center;

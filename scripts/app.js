@@ -43,16 +43,42 @@ const init = () => {
 	// });
 
 	// mobile menu button open/close
-	// const mobileMenuIcon = document.querySelector(".nav-toggle");
-	// mobileMenuIcon.addEventListener("click", () => {
-	// 	mobileMenuIcon.classList.toggle("opened");
-	// 	if (mobileMenuIcon.classList[1] === "opened") {
-	// 		document.querySelector(".navigation .wrapper").style.right = "0";
-	// 		mobileMenuIcon.style.backgroundColor = "transparent";
-	// 	} else {
-	// 		document.querySelector(".navigation .wrapper").style.right = "-100vw";
-	// 		mobileMenuIcon.style.backgroundColor = "rgba(189, 94, 194, 0.7)";
-	// 	}
+	const mobileMenuIcon = document.querySelector(".nav-toggle");
+	const navList = document.querySelector(".nav-list");
+	mobileMenuIcon.addEventListener("click", () => {
+		mobileMenuIcon.classList.toggle("opened");
+		if (mobileMenuIcon.classList[1] === "opened") {
+			navList.classList.add("open-menu");
+		} else {
+			// document.querySelector(".navigation .wrapper").style.right = "-100vw";
+			// mobileMenuIcon.style.backgroundColor = "rgba(189, 94, 194, 0.7)";
+			navList.classList.remove("open-menu");
+		}
+	});
+
+	const listItems = navList.children;
+	for (i = 0; i < listItems.length; i++) {
+		listItems[i].addEventListener("click", () => {
+			mobileMenuIcon.classList.remove("opened");
+			navList.classList.remove("open-menu");
+		});
+	}
+
+	// const formButton = document.querySelector("#form-button");
+	// const form = document.getElementsByTagName("form");
+	// const contactContent = document.querySelector(".contact-content");
+
+	// formButton.addEventListener("submit", (event) => {
+	// 	event.preventDefault();
+	// 	const p = document.createElement("p");
+	// 	p.innerText = "Thank you for reaching out!";
+	// 	form.style.display = "none";
+	// 	contactContent.appendChild(p);
+	// });
+
+	// navList.children.addEventListener("click", () => {
+	// 	mobileMenuIcon.classList.remove("opened");
+	// 	navList.classList.remove("open-menu");
 	// });
 };
 

@@ -26,15 +26,19 @@
 // }
 
 // .nav-toggle {
-// 	display: none;
-// 	position: fixed;
-// 	padding: 12px 7px;
-// 	background-color: rgba(189, 94, 194, 0.7);
-// 	border: none;
-// 	margin: 7px 0;
-// 	top: 0;
-// 	right: 0;
-// 	z-index: 10;
+// 	// background-image: url("../assets/images/home.png");
+// 	// background-repeat: no-repeat;
+// 	// background-size: cover;
+// 	// background-position-x: center;
+// 	// display: none;
+// 	// position: fixed;
+// 	// padding: 12px 7px;
+// 	background-color: transparent;
+// 	// border: none;
+// 	// margin: 7px 0;
+// 	// top: 0;
+// 	// right: 0;
+// 	// z-index: 10;
 // 	cursor: pointer;
 // }
 
@@ -47,14 +51,18 @@
 // .bar-bot {
 // 	background: white;
 // 	display: block;
-// 	-webkit-transform: rotate(0deg);
-// 	transform: rotate(0deg);
-// 	-webkit-transition: 0.2s ease all;
-// 	transition: 0.5s ease;
-// 	border-radius: 2px;
-// 	height: 2px;
+// 	// -webkit-transform: rotate(0deg);
+// 	// transform: rotate(0deg);
+// 	// -webkit-transition: 0.2s ease all;
+// 	// transition: 0.5s ease;
+// 	// border-radius: 2px;
+// 	// height: 2px;
 // 	width: 25px;
-// 	margin-bottom: 4px;
+// 	// margin-bottom: 4px;
+// 	// color: transparent;
+// 	// -webkit-background-clip: text;
+// 	// background-clip: text;
+// 	// mix-blend-mode: screen;
 // }
 
 // .nav-toggle .bar-bot {
@@ -84,7 +92,7 @@
 	margin-bottom: 6px;
 	// border: 1px solid red;
 	position: relative;
-	span {
+	.logo-span {
 		position: absolute;
 		top: 12px;
 		left: 21px;
@@ -99,19 +107,20 @@ nav {
 	width: 100%;
 	top: 0;
 	z-index: 20;
-
-	ul {
-		display: flex;
-		align-items: center;
-		color: white;
-		// border: 1px solid blue;
-		gap: 50px;
-		margin: 0 auto;
-	}
+	// border: 2px solid blue;
 
 	.wrapper {
 		display: flex;
 	}
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	color: white;
+	// border: 1px solid blue;
+	gap: 50px;
+	margin: 0 auto;
 }
 
 .on-scroll {
@@ -120,7 +129,21 @@ nav {
 	// .wrapper {
 	// }
 
-	ul {
+	// ul {
+	// 	background-image: url("../assets/images/home.png");
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	background-position-x: center;
+	// 	// background-color: white;
+	// 	color: transparent;
+	// 	-webkit-background-clip: text;
+	// 	background-clip: text;
+	// 	// mix-blend-mode: screen;
+	// }
+
+	.logo,
+	.nav-list,
+	.logo-span {
 		background-image: url("../assets/images/home.png");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -132,16 +155,83 @@ nav {
 		// mix-blend-mode: screen;
 	}
 
-	.logo,
-	span {
+	// 	.nav-toggle {
+	// 	// display: none;
+	// 	// position: fixed;
+	// 	// padding: 12px 7px;
+	// 	// background-color: rgba(189, 94, 194, 0.7);
+	// 	background-color: transparent;
+	// 	border: none;
+	// 	margin: 7px 0;
+	// 	top: 0;
+	// 	right: 0;
+	// 	z-index: 10;
+	// 	cursor: pointer;
+	// }
+
+	.bar-top,
+	.bar-mid,
+	.bar-bot {
 		background-image: url("../assets/images/home.png");
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position-x: center;
-		// background-color: white;
-		color: transparent;
-		-webkit-background-clip: text;
-		background-clip: text;
-		// mix-blend-mode: screen;
 	}
+}
+
+.nav-toggle {
+	display: none;
+	// position: fixed;
+	padding: 10px;
+	// background-color: rgba(189, 94, 194, 0.7);
+	background-color: transparent;
+	border: none;
+	// margin: 7px 0;
+	// top: 0;
+	// right: 0;
+	z-index: 10;
+	cursor: pointer;
+	// border: 1px solid red;
+	// align-self: center;
+	// justify-self: last baseline;
+}
+
+.nav-toggle:focus {
+	outline-width: 0;
+}
+
+.bar-top,
+.bar-mid,
+.bar-bot {
+	// background-position-x: center;
+	// background: black;
+	background-color: white;
+	display: block;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.2s ease all;
+	transition: 0.5s ease;
+	border-radius: 2px;
+	height: 2px;
+	width: 25px;
+	margin-bottom: 4px;
+}
+
+// .nav-toggle .bar-bot {
+// 	margin-bottom: 0;
+// }
+
+.opened .bar-top {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 15% 15%;
+	transform-origin: 15% 15%;
+}
+.opened .bar-mid {
+	opacity: 0;
+}
+.opened .bar-bot {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 15% 95%;
+	transform-origin: 15% 95%;
 }
