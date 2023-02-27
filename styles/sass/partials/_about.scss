@@ -1,13 +1,3 @@
-// .about {
-// 	padding: 120px 0;
-// 	display: flex;
-// 	flex-direction: column;
-// 	p {
-// 		max-width: 80%;
-// 		line-height: 1.7rem;
-// 	}
-// }
-
 .about {
 	background-image: url("../assets/images/about.png");
 	background-repeat: no-repeat;
@@ -15,18 +5,9 @@
 	background-position-y: center;
 	background-position-x: right;
 	min-height: 90vh;
-	// border: 1px solid red;
-
-	// .wrapper {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: center;
-	// }
 
 	.wrapper {
 		padding-top: 70px;
-		// border: 1px solid blue;
-		// height: 100vh;
 	}
 
 	.image-container {
@@ -41,7 +22,6 @@
 
 		img {
 			border-radius: 40%;
-			// height: 100%;
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -53,14 +33,9 @@
 
 .about-content {
 	display: flex;
-	// flex-wrap: wrap;
-	// height: 100%;
 	gap: 30px;
 	justify-content: center;
 	align-items: center;
-	// border: 1px solid red;
-	// height: calc(100vh - 162px);
-	// height: 80vh;
 
 	P {
 		max-width: 55%;

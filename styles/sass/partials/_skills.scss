@@ -1,59 +1,9 @@
-// .skills {
-// 	padding: 120px 0;
-// 	ul {
-// 		margin: 0 auto;
-// 		max-width: 90%;
-// 		display: flex;
-// 		justify-content: space-between;
-// 		align-items: center;
-// 		flex-wrap: wrap;
-
-// 		li {
-// 			max-width: 150px;
-// 			width: 150px;
-// 			margin: 20px auto;
-// 			display: flex;
-// 			flex-direction: column;
-// 			align-items: center;
-// 			text-align: center;
-
-// 			p {
-// 				text-align: center;
-// 				max-width: 100%;
-// 				margin: 5px auto;
-// 			}
-
-// 			.material-icons-outlined {
-// 				margin-top: 5px;
-// 				margin-bottom: -15px;
-// 			}
-
-// 			i,
-// 			span {
-// 				@include font-size(70);
-// 				display: block;
-// 				background-color: $pink;
-// 				@include gradient-background;
-// 				-webkit-background-clip: text;
-// 				background-clip: text;
-// 				color: transparent;
-// 				transition: 0.8s;
-// 				&:hover,
-// 				&:hover {
-// 					color: $purple;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
 .skills {
 	background-image: url("../assets/images/skills.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: center;
 	background-position-x: right;
-	// min-height: 75vh;
 
 	.wrapper {
 		padding: 70px 0 100px;
@@ -67,11 +17,9 @@
 	}
 
 	li {
-		// border: 1px solid white;
 		width: 125px;
 		height: 125px;
 		border-radius: 50%;
-		// margin: 20px auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -80,10 +28,6 @@
 		background-color: rgba(255, 255, 255, 0.8);
 		mix-blend-mode: screen;
 		font-weight: bold;
-
-		// color: transparent;
-		// -webkit-background-clip: text;
-		// background-clip: text;
 
 		&:hover p {
 			visibility: visible;
@@ -117,34 +61,3 @@
 .accessibility {
 	@include font-size(18);
 }
-
-// .html,
-// .css,
-// .js,
-// .redux,
-// .git,
-// .github {
-// 	p {
-// 		margin-top: 7px;
-// 	}
-// }
-
-// .firebase,
-// .accessibility {
-// 	p {
-// 		margin-top: 3px;
-// 	}
-// }
-
-// .accessibility,
-// .react {
-// 	p {
-// 		@include font-size(18);
-// 	}
-// }
-
-// .responsive-design {
-// 	p {
-// 		margin-top: -7px;
-// 	}
-// }

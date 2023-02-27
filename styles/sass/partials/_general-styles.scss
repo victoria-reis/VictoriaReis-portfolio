@@ -1,27 +1,18 @@
 html {
 	font-size: 125%;
 	font-family: $body-font;
-	// color: black;
 	scroll-behavior: smooth;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	// background-image: radial-gradient(
-	// 	circle,
-	// 	rgba(189, 94, 194, 0.15),
-	// 	rgba(255, 122, 135, 0.15),
-	// 	rgba(255, 199, 68, 0.1)
-	// );
 }
 
 .wrapper {
 	margin: 0 auto;
 	width: 80%;
-	// height: 100%;
 	max-width: 1400px;
-	// border: 1px solid white;
 }
 
 img {
@@ -35,46 +26,12 @@ img {
 	font-family: fontAwesome;
 	font-style: normal;
 	display: block;
-	// display: inline-block;
-	// background-color: $pink;
-	// @include gradient-background;
-	// -webkit-background-clip: text;
-	// background-clip: text;
-	// color: transparent;
-	// transition: 0.8s;
-	// &:hover,
-	// &:focus {
-	// 	color: $purple;
-	// }
 }
 
 .material-icons-outlined {
 	font-family: "Material Icons";
 	display: block;
-	// background-color: $pink;
-	// @include gradient-background;
-	// -webkit-background-clip: text;
-	// background-clip: text;
-	// color: transparent;
-	// transition: 0.8s;
-	// &:hover,
-	// &:focus {
-	// 	color: $purple;
-	// }
 }
-
-// .fa-chevron-up,
-// .fa-chevron-down {
-// 	@include font-size(35);
-// 	animation: arrow 1s linear 0s infinite normal;
-// 	a {
-// 		padding: 15px;
-// 	}
-// }
-
-// .fa-chevron-down {
-// 	margin-left: -15px;
-// }
 
 p {
 	margin: 0;
@@ -85,8 +42,6 @@ p {
 a {
 	text-decoration: none;
 	color: inherit;
-	// padding: 5px 15px;
-	// border-radius: 50px;
 }
 
 ul {
@@ -105,7 +60,6 @@ button {
 
 h1 {
 	@include h1-font;
-	// color: white;
 	margin: 0;
 }
 
@@ -117,19 +71,16 @@ h2 {
 
 h3 {
 	@include h3-font;
-	// margin: 30px 0;
 	margin-top: 0;
 }
 
 h4 {
 	@include h4-font;
 	margin: 0;
-	// border: 1px solid blue;
 }
 
 .typed-cursor {
 	color: black;
-	// border: 1px solid red;
 	margin-left: -8px;
 }
 
@@ -137,7 +88,6 @@ footer {
 	p {
 		margin: 3px auto;
 		font-family: "Migra Extralight", serif;
-		// margin: 40px 0 10px;
 	}
 }
 
@@ -150,16 +100,6 @@ footer {
 .reveal.active {
 	opacity: 1;
 }
-
-// arrow scroll animation
-// @keyframes arrow {
-// 	50% {
-// 		transform: translateY(-10px);
-// 	}
-// 	100% {
-// 		transform: translateY(0px);
-// 	}
-// }
 
 @keyframes arrow-fade {
 	0% {
@@ -176,17 +116,6 @@ footer {
 }
 
 @keyframes skill-fadeout {
-	// 0% {
-	// 	-webkit-transform: translate(0, 0);
-	// 	opacity: 0;
-	// }
-	// 50% {
-	// 	opacity: 1;
-	// }
-	// 100% {
-	// 	-webkit-transform: translate(0, 40px);
-	// 	opacity: 0;
-	// }
 	0% {
 		opacity: 1;
 	}
@@ -196,17 +125,6 @@ footer {
 }
 
 @keyframes skill-fadein {
-	// 0% {
-	// 	-webkit-transform: translate(0, 0);
-	// 	opacity: 0;
-	// }
-	// 50% {
-	// 	opacity: 1;
-	// }
-	// 100% {
-	// 	-webkit-transform: translate(0, 40px);
-	// 	opacity: 0;
-	// }
 	0% {
 		opacity: 0;
 	}
