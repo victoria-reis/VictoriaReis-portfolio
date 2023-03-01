@@ -633,6 +633,7 @@ header a {
 }
 .about-content P {
   max-width: 55%;
+  line-height: 35px;
 }
 
 .skills {
