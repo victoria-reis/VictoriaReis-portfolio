@@ -317,6 +317,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:focus {
+  outline: 1px solid black;
+}
 
 ul {
   margin: 0;
@@ -514,10 +517,6 @@ nav .wrapper {
   border: none;
   z-index: 10;
   cursor: pointer;
-}
-
-.nav-toggle:focus {
-  outline-width: 0;
 }
 
 .bar-top,
@@ -987,6 +986,7 @@ textarea {
     color: black;
   }
   .nav-list {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -998,10 +998,11 @@ textarea {
     background-color: white;
     top: 63px;
     right: -200px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
   }
   .nav-list.open-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     right: 0;
   }
   .about .image-container {

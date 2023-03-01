@@ -42,6 +42,9 @@ p {
 a {
 	text-decoration: none;
 	color: inherit;
+	&:focus {
+		outline: 1px solid black;
+	}
 }
 
 ul {

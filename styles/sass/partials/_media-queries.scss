@@ -84,6 +84,7 @@
 	}
 
 	.nav-list {
+		display: none;
 		flex-direction: column;
 		position: absolute;
 		width: 180px;
@@ -92,10 +93,10 @@
 		background-color: white;
 		top: 63px;
 		right: -200px;
-		transition: 0.5s;
 	}
 
 	.nav-list.open-menu {
+		display: flex;
 		right: 0;
 	}
 
