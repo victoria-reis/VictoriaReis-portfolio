@@ -448,6 +448,7 @@ footer p {
   padding-right: 23px;
   margin-bottom: 6px;
   position: relative;
+  cursor: pointer;
 }
 .logo .logo-span {
   position: absolute;
@@ -739,6 +740,10 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -780,7 +785,7 @@ header a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.project-links a:hover {
+.project-links a:hover, .project-links a:focus {
   scale: 0.85;
 }
 
@@ -836,7 +841,7 @@ video {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.contact button:hover {
+.contact button:hover, .contact button:focus {
   background-color: white;
   scale: 0.9;
 }
@@ -881,8 +886,9 @@ video {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.contact-icons .fa-brands:hover,
-.contact-icons .fa-solid:hover {
+.contact-icons .fa-brands:hover, .contact-icons .fa-brands:focus,
+.contact-icons .fa-solid:hover,
+.contact-icons .fa-solid:focus {
   scale: 0.9;
 }
 
@@ -899,7 +905,7 @@ video {
       align-self: center;
   margin-bottom: 30px;
 }
-.resume-download:hover {
+.resume-download:hover, .resume-download:focus {
   background-color: white;
   scale: 0.9;
 }
@@ -908,6 +914,21 @@ textarea {
   height: 150px;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    position: static;
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .fa-chevron-down {
+    font-size: 35px;
+    font-size: 1.75rem;
+    color: white;
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 @media (max-width: 1200px) {
   .wrapper {
     width: 85%;
@@ -970,21 +991,17 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    width: 250px;
+    width: 180px;
     padding: 40px 0;
     color: black;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 25px 0px rgb(68, 68, 68);
-            box-shadow: 0px 0px 25px 0px rgb(68, 68, 68);
-    top: 80px;
-    right: -300px;
+    background-color: white;
+    top: 63px;
+    right: -200px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .nav-list.open-menu {
-    margin-right: -125px;
-    right: 50%;
+    right: 0;
   }
   .about .image-container {
     width: 60%;
@@ -1015,9 +1032,9 @@ textarea {
   }
   .projects li {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

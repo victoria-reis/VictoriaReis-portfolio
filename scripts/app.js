@@ -23,12 +23,26 @@ const init = () => {
 	});
 
 	// typing animation
-	const typed = new Typed("#typed", {
-		strings: ["Frontend Developer", "UI Developer", "React Developer"],
-		typeSpeed: 100,
-		backSpeed: 80,
-		loop: true,
-	});
+	const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+	if (!reducedMotion.matches) {
+		const typed = new Typed("#typed", {
+			strings: ["Frontend Developer", "UI Developer", "React Developer"],
+			typeSpeed: 100,
+			backSpeed: 80,
+			loop: true,
+		});
+	} else {
+		const h2 = document.querySelector("#typed");
+		h2.innerHTML = "Frontend Developer";
+	}
+
+	// disable video auto-play if reduced motion is true
+	const video = document.getElementsByTagName("video")[0];
+	if (reducedMotion.matches) {
+		video.tabIndex = 0;
+		video.autoplay = false;
+		video.controls = true;
+	}
 
 	// mobile menu button open/close
 	const mobileMenuIcon = document.querySelector(".nav-toggle");

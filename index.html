@@ -28,9 +28,9 @@
 			<nav id="nav">
 				<!-- WRAPPER STARTS -->
 				<div class="wrapper">
-					<p class="logo">
-						<a href="#home">V<span class="logo-span">R</span></a>
-					</p>
+					<a class="logo" aria-label="home" href="#home">
+						<p>V<span class="logo-span">R</span></p>
+					</a>
 					<ul class="nav-list">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
@@ -38,8 +38,7 @@
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
-					<button class="nav-toggle">
-						<span class="sr-only">Open or Close Menu</span>
+					<button class="nav-toggle" aria-label="open or close menu">
 						<span class="bar-top"></span>
 						<span class="bar-mid"></span>
 						<span class="bar-bot"></span>
@@ -55,7 +54,7 @@
 					<h1>Hi there, <span>I'm Victoria Reis</span></h1>
 					<h2><span id="typed"></span></h2>
 				</div>
-				<a href="#about" aria-label="Interact to see more"
+				<a href="#about" aria-label="i		nteract to see more"
 					><i class="fa-solid fa-chevron-down" aria-hidden="true"></i
 				></a>
 			</header>
@@ -165,9 +164,6 @@
 				<!-- UL STARTS -->
 				<ul>
 					<li class="reveal">
-						<div class="image-container">
-							<img src="./assets/images/e-commerce-mockup.png" alt="">
-						</div>
 						<div class="project-content">
 							<h4>Fashion4U</h4>
 							<p>Responsive clothing e-commerce.</p>
@@ -176,11 +172,11 @@
 							<a href="https://github.com/victoria-reis/e-commerce">Repo</a>
 							</div>
 						</div>
+						<div class="image-container">
+							<img src="./assets/images/e-commerce-mockup.png" alt="Fashion4U project screenshot">
+						</div>
 					</li>
 					<li class="reveal">
-						<div class="image-container">
-							<img src="./assets/images/lizzo-app-mockup.png" alt="">
-						</div>
 						<div class="project-content">
 							<h4>Baby How you Feeling?</h4>
 							<p>Responsive React application inspired by the singer Lizzo.</p>
@@ -189,19 +185,11 @@
 								<a href="https://github.com/victoria-reis/lizzo-app">Repo</a>
 							</div>
 						</div>
+						<div class="image-container">
+							<img src="./assets/images/lizzo-app-mockup.png" alt="Baby How you Feeling project screenshot">
+						</div>
 					</li>
 					<li class="cope reveal">
-						<div class="image-container">
-							<video
-								src="./assets/video/cope-video.mp4"
-								autoplay="true"
-								loop="true"
-							></video>
-							<!-- <img
-								src="./assets/images/google-pixel-6-pro-medium.png"
-								alt="Refrigeration Versification web page displayed both in laptop and smartphone"
-							/> -->
-						</div>
 						<div class="project-content">
 							<h4>Cope</h4>
 							<p>
@@ -213,11 +201,16 @@
 								<a href="https://github.com/victoria-reis/cope-app">Repo</a>
 							</div>
 						</div>
+						<div class="image-container">
+							<video
+								src="./assets/video/cope-video.mp4"
+								autoplay="true"
+								loop="true"
+								tabindex="-1"	
+							></video>
+						</div>
 					</li>
 					<li class="reveal">
-						<div class="image-container">
-							<img src="./assets/images/self-love-mockup.png" alt="">
-						</div>
 						<div class="project-content">
 							<h4>Self-Love Reminder</h4>
 							<p>
@@ -229,11 +222,11 @@
 								<a href="https://github.com/victoria-reis/self-love-app">Repo</a>
 							</div>
 						</div>
+						<div class="image-container">
+							<img src="./assets/images/self-love-mockup.png" alt="Self-Love Reminder project screenshot">
+						</div>
 					</li>
 					<li class="reveal">
-						<div class="image-container">
-							<img src="./assets/images/js-quiz-mockup.png" alt="">
-						</div>
 						<div class="project-content">
 							<h4>Tech-Tacular Test</h4>
 							<p>JavaScript knowledge quiz application.</p>
@@ -243,6 +236,9 @@
 								>Repo</a
 							>
 							</div>
+						</div>
+						<div class="image-container">
+							<img src="./assets/images/js-quiz-mockup.png" alt="Tech-Tacular Test project screenshot">
 						</div>
 					</li>
 				</ul>

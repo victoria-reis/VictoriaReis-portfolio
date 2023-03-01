@@ -32,7 +32,8 @@
 		border: 3px solid white;
 		font-family: "Migra Extrabold", serif;
 		transition: 0.3s;
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: white;
 			scale: 0.9;
 		}
@@ -65,7 +66,8 @@
 	.fa-solid {
 		@include font-size(50);
 		transition: 0.3s;
-		&:hover {
+		&:hover,
+		&:focus {
 			scale: 0.9;
 		}
 	}
@@ -81,7 +83,8 @@
 	color: black !important;
 	align-self: center;
 	margin-bottom: 30px;
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: white;
 		scale: 0.9;
 	}
